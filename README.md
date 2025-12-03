@@ -149,6 +149,12 @@
 </p>
 
 
+### 3) 좋아요 기능
+▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/13c19e33-981d-4e9e-baa9-eff6d3d69ddb" width="1000" />
+</p>
+
 
 
 <br>
