@@ -117,27 +117,27 @@
 ▪ 도서조회: 데이터베이스의 모든 도서 정보를 조회하여 테이블로 표시 <br>
 ▪ 도서삭제: 삭제 버튼 클릭 시 비동기 요청으로 해당 도서 삭제 후 목록 재출력 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17e7ac33-9249-4046-b902-67d1e321a0e1" width="1000" />
+  <img src="https://github.com/user-attachments/assets/17e7ac33-9249-4046-b902-67d1e321a0e1" width="500" />
 </p>
 
 
 ### 2) 검색기능
 ▪ 제목, 작가, 출판사, 보유 수, ISBN 입력 후 등록 버튼 클릭 시 비동기 전송 → DB 저장 → 목록 자동 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7ec18d50-e6e5-4f65-ae6b-89a2ccad4d81" width="1000" />
+  <img src="https://github.com/user-attachments/assets/7ec18d50-e6e5-4f65-ae6b-89a2ccad4d81" width="500" />
 </p>
 
 
 ### 3) 프로필수정기능
 ▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/27e3c6e3-7af6-4265-9466-156cb283d4f6" width="1000" />
+  <img src="https://github.com/user-attachments/assets/27e3c6e3-7af6-4265-9466-156cb283d4f6" width="500" />
 </p>
 
 ### 4) 프로필수정기능
 ▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
 <p align="center">
-  <img  src="https://github.com/user-attachments/assets/23657602-12a7-4a3a-9a49-cd24451dc129" width="1000" />
+  <img  src="https://github.com/user-attachments/assets/23657602-12a7-4a3a-9a49-cd24451dc129" width="500" />
 </p>
 
 
@@ -145,14 +145,14 @@
 ### 3) 게시글 이미지 업로드 기능
 ▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/47fa076c-effa-44d1-91db-147b3d47d843" width="1000" />
+  <img src="https://github.com/user-attachments/assets/47fa076c-effa-44d1-91db-147b3d47d843" width="500" />
 </p>
 
 
 ### 3) 좋아요 기능
 ▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/13c19e33-981d-4e9e-baa9-eff6d3d69ddb" width="1000" />
+  <img src="https://github.com/user-attachments/assets/13c19e33-981d-4e9e-baa9-eff6d3d69ddb" width="500" />
 </p>
 
 
