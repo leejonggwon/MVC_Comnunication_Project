@@ -107,7 +107,7 @@
 <br>
 
 ## 4. 개발 포인트
-▪ Spring MVC 3Tier 패턴을 적용하여 Controller - Service - Model 계층 구조로 설계 <br>
+▪ Spring MVC Framework와 3-Tier Structure의 Controller - Service - Model 계층 구조로 설계 <br>
 ▪ AJAX 비동기 통신을 통해 페이지 새로고침 없이 기능 구현 <br>
 ▪ MyBatis Mapper XML을 활용해 SQL을 명확하게 관리 <br>
 ▪ JSP와 jQuery, Bootstrap 3을 활용하여 직관적이고 반응형이며 간결한 사용자 인터페이스 제공 <br>
