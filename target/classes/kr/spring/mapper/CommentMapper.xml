@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.spring.mapper.CommentMapper">
+	
+	
+	<!-- 댓글삭제하기 -->
+	<delete id="cmtDelete" parameterType="int">
+		UPDATE CM_COMMENT
+		SET CMTAVAILABLE = 0
+		WHERE CMTIDX = #{cmtIdx}
+	</delete>
+	
+	
+	<!-- 댓글등록하기 -->
+	<insert id="cmtInsert" parameterType="kr.spring.entity.Comment"> 
+		INSERT INTO CM_COMMENT(IDX, CMTCONTENT, MEMID, MEMNAME, MEMNICKNAME, MEMProfile) 
+		VALUES (#{idx}, #{cmtContent}, #{memID}, #{memName}, #{memNickName}, #{memProfile})
+	</insert>
+	
+	
+	<!-- 댓글조회하기 -->
+	<select id="loadCmt" parameterType="int" resultType="kr.spring.entity.Comment"> 
+	    SELECT *
+	    FROM CM_COMMENT
+	    WHERE IDX = #{idx}
+	    ORDER BY CMTIDX DESC
+	</select>
+
+
+
+
+</mapper>

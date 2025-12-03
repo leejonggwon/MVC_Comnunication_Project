@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.spring.mapper.SeatMapper">
+
+
+	<select id="getSeat" resultType="kr.spring.entity.Seat">
+		SELECT * FROM CM_SEAT
+	</select>
+	
+	<update id="seatAvailable" parameterType="kr.spring.entity.Seat">
+		UPDATE CM_SEAT SET SEATAVAILABLE = 1  WHERE SEATNUM = #{seatNum} 
+	</update>
+	
+	<!-- memStatus +1 -->
+	<update id="memStatus1" parameterType="String">
+		UPDATE CM_MEMBER SET MEMSTATUS = 1 WHERE MEMID = #{memID} 
+	</update>
+
+
+	<select id="selectSeat" parameterType="int" resultType="kr.spring.entity.Seat">
+		SELECT * FROM CM_SEAT WHERE SEATNUM = #{seatNum}
+	</select>
+	
+	<!-- parameterType="kr.spring.entity.Reservation" 이라고 선언되어 있으면
+         MyBatis는 전달된 파라미터 객체를 Reservation 객체 하나라고 인식하므로 그대로 적으면 된다 -->
+	<insert id="insertR" parameterType="kr.spring.entity.Reservation">
+		INSERT INTO CM_RESERVATION(SEATNUM, SEATNAME, MEMID, MEMNAME, MEMNICKNAME, ENDTIME)
+		VALUES(#{seatNum}, #{seatName}, #{memID}, #{memName}, #{memNickName}, NULL)
+	</insert>
+	
+
+    <!-- 반납하기 반납시간생성  -->
+	<update id="returnR" parameterType="int">
+		UPDATE CM_RESERVATION SET ENDTIME = NOW() WHERE RIDX = #{rIdx}
+	</update>
+	
+	<!-- 발권한정보불러오기 -->
+	<select id="nowRInfo" parameterType="String" resultType="kr.spring.entity.Reservation">
+		 SELECT * FROM CM_RESERVATION WHERE MEMID = #{memID} AND ENDTIME IS NULL ORDER BY SEATNUM DESC LIMIT 1
+	</select>
+	
+	<!-- 발권기록출력 -->
+	<select id="rRecord" parameterType="String" resultType="kr.spring.entity.Reservation">
+		 SELECT * FROM CM_RESERVATION WHERE MEMID = #{memID} AND ENDTIME IS NOT NULL ORDER BY RIDX DESC 
+	</select>
+	
+	<!-- SeatAvailable → 0 -->
+	<update id="returnSeatAvailable0" parameterType="int">
+		UPDATE CM_SEAT SET SEATAVAILABLE = 0  WHERE SEATNUM = #{seatNum} 
+	</update>
+	
+	
+	<!-- memStatus → 0 -->
+	<update id="returnMemStatus0" parameterType="String">
+		UPDATE CM_MEMBER SET MEMSTATUS = 0 WHERE MEMID = #{memID} 
+	</update>
+	
+	<!-- 반납시간넣기 -->
+	<update id="endTime" parameterType="int">
+		UPDATE CM_RESERVATION SET ENDTIME = NOW(), ENDTIMESTATUS = 1 WHERE SEATNUM = #{seatNum}
+	</update>
+	
+	<!-- 회원정보 다시불러오기 -->
+	<select id="selectMem" parameterType="String" resultType="kr.spring.entity.Member">
+		SELECT * FROM CM_MEMBER WHERE MEMID = #{memID}
+	</select>
+
+</mapper>
+
+
+
+
+
+
+
