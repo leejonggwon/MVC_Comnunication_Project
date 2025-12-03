@@ -3,13 +3,12 @@
 ▪ MVC Communication 
 ### 서비스설명
 ▪ 본 프로젝트는 스프링(Spring) 프레임워크와 MyBatis 기반으로 개발된 MVC 구조의 커뮤니케이션 플랫폼 입니다. <br>
-▪ 도서의 등록, 조회, 수정, 삭제(CRUD) 기능을 제공하며 비동기 통신(AJAX)을 통해 실시간으로 목록을 갱신함으로 사용자 경험을 향상시켰습니다. <br>
-▪ 보유 도서를 효율적으로 관리하기 위한 웹 애플리케이션으로 관리자는 JSP 기반의 직관적인 UI를 통해 웹 화면에서 도서 정보를 손쉽게 관리할 수 있도록 하는 것을 목표로 합니다.
+▪  회원관리기능, 게시글기능, 좋아요기능, 댓글기능, 답글기능, 조회수기능, 검색기능, 페이징기능, 게시글 작성자 프로필기능, 좌석발권 기능등을 제공하며 비동기 통신(AJAX)을 통해 실시간으로 목록을 갱신함으로 사용자 경험을 향상시켰습니다. <br>
 
 <br>
 
 ## 2. 개발환경
-▪ 개발 언어: Java <br>
+▪ 개발 언어: Java 1.7 <br>
 ▪ 프레임워크: Spring Framework 5.0.7.RELEASE <br>
 ▪ 데이터베이스: MySQL 5.1 <br>
 ▪ 프론트엔드: JSP, jQuery, AJAX, HTML/CSS <br>
@@ -18,13 +17,13 @@
 <br>
 
 ## 3. 주요기능 구성 
-### 1) BookController / BookRestController
-▪ BookController: 기본 페이지 이동, JSP 매핑 담당 <br>
-▪ BookRestController: AJAX를 통한 비동기 데이터 처리 담당 (JSON 형태로 응답) <br>
+### 1) Controller / RestController
+▪ xxxxController: 기본 페이지 이동, JSP 매핑 담당 <br>
+▪ xxxxRestController: AJAX를 통한 비동기 데이터 처리 담당 (JSON 형태로 응답) <br>
 
 ### 2) Mapper + SQL Mapper (MyBatis)
-▪ BookMapper.java: 인터페이스 정의 (CRUD 메서드 선언) <br>
-▪ BookMapper.xml: 실제 SQL 쿼리 정의 <br>
+▪ xxxxMapper.java: 인터페이스 정의 (CRUD 메서드 선언) <br>
+▪ xxxxMapper.xml: 실제 SQL 쿼리 정의 <br>
 
 ### 3) main.jsp (메인 화면)
 ▪ 도서 목록을 테이블 형태로 표시 <br>
