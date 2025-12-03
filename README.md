@@ -2,8 +2,8 @@
 ### 서비스명
 ▪ MVC Communication 
 ### 서비스설명
-▪ 본 프로젝트는 스프링(Spring) 프레임워크와 MyBatis 기반으로 개발된 MVC 구조의 커뮤니케이션 플랫폼 입니다. <br>
-▪  회원관리기능, 게시글기능, 좋아요기능, 댓글기능, 답글기능, 조회수기능, 검색기능, 페이징기능, 게시글 작성자 프로필기능, 좌석발권 기능등을 제공하며 비동기 통신(AJAX)을 통해 실시간으로 목록을 갱신함으로 사용자 경험을 향상시켰습니다. <br>
+▪ 본 프로젝트는 스프링(Spring) 프레임워크와 MVC(Model-View-Controller) 아키텍처를 기반으로 한 커뮤니케이션 프로젝트입니다. <br>
+▪ 회원관리기능, 게시글기능, 좋아요기능, 댓글기능, 답글기능, 조회수기능, 검색기능, 페이징기능, 게시글 작성자 프로필기능, 좌석발권 기능등을 제공하며 비동기 통신(AJAX)을 통해 실시간으로 목록을 갱신함으로 사용자 경험을 향상시켰습니다. <br>
 
 ### 기능목록과 세부기능
 #### 1. 회원 관리 기능
@@ -17,23 +17,55 @@
 ▪ 프로필 이미지 업데이트 <br>
 ▪ 비밀번호 일치 여부 확인 <br>
 
-#### 1. 회원 관리 기능
-1-1. 로그인 / 로그아웃 <br>
-▪ 로그인 <br>
-▪ 로그아웃 <br>
-1-2. 회원가입 <br>
-▪ 아이디 중복 확인 <br>
-▪ 비밀번호 일치 여부 확인 <br>
-1-3. 회원정보 수정 <br>
-▪ 프로필 이미지 업데이트 <br>
-▪ 비밀번호 일치 여부 확인 <br>
+#### 2. 게시글 기능
+2-1. 게시글 작성 <br>
+▪ 글 작성 <br>
+▪ 이미지 업로드 <br>
+2-2. 게시글 보기 <br>
+2-3. 게시글 수정 <br>
+2-4. 게시글 삭제 <br>
 
+#### 3. 좋아요 기능
+▪ 한 게시물당 좋아요 1개로 제한 <br>
+
+#### 4. 댓글기능
+▪ 댓글 등록 <br>
+▪ 댓글 삭제 <br>
+
+#### 5. 답글기능
+▪ 답글 입력 <br>
+▪ 답글 수정 <br>
+▪ 답글 삭제 <br>
+
+#### 6. 조회수 기능
+▪ 상세 게시글 페이지 이동시 조회수 증가 <br>
+
+#### 7. 페이징 기능
+▪ 페이지 별 페이징 <br>
+▪ 그룹(10페이지) 별 페이징 <br>
+▪ 페이징 후 게시글 상세보기 후 목록 복귀시 페이징 정보 유지 <br>
+
+#### 8. 검색 기능
+▪ 이름/제목/내용 별 검색 기능 <br>
+▪ 검색 후 게시글 본 뒤 목록 이동 시 검색 조건 유지 <br>
+▪ 검색 후 게시글 상세보기 후 목록 복귀 시 검색 조건 유지 <br>
+
+#### 9. 게시글 작성자 프로필
+▪ 작성자 클릭 시 프로필 등 작성자 정보 표시 <br>
+
+#### 10. 좌석 발권 기능
+10-1. 좌석발권 <br>
+▪ 사용자 당 한개 좌석만 발권하도록 제한 <br>
+10-2.좌석발권 반납 <br>
+10-3. 발권 정보 관리 <br>
+▪ 현재 발권된 좌석 정보 <br>
+▪ 과거 발권된 사용이력 <br>
 
 
 <br>
 
 ## 2. 개발환경
-▪ 개발 언어: Java 1.7 <br>
+▪ 개발 언어: Java 1.8 <br>
 ▪ 프레임워크: Spring Framework 5.0.7.RELEASE <br>
 ▪ 데이터베이스: MySQL 5.1 <br>
 ▪ 프론트엔드: JSP, jQuery, AJAX, HTML/CSS <br>
@@ -42,24 +74,35 @@
 <br>
 
 ## 3. 주요기능 구성 
+### 3Tier 아키텍처
 ### 1) Controller / RestController
-▪ xxxxController: 기본 페이지 이동, JSP 매핑 담당 <br>
-▪ xxxxRestController: AJAX를 통한 비동기 데이터 처리 담당 (JSON 형태로 응답) <br>
+▪ MainController <br>
+▪ MemberController / MemeberRestController <br>
+▪ BoardController / BoardRestController <br>
+▪ SeatController / SeatRestController <br>
+▪ CommentRestController <br>
+▪ LikeRestController <br>
 
-### 2) Mapper + SQL Mapper (MyBatis)
-▪ xxxxMapper.java: 인터페이스 정의 (CRUD 메서드 선언) <br>
-▪ xxxxMapper.xml: 실제 SQL 쿼리 정의 <br>
+### 2) Service / ServiceImpl
+▪ MemberService / MemberServiceImpl <br>
+▪ BoardService / BoardServiceImpl <br>
+▪ SeatService / SeatServiceImpl <br>
+▪ CommentService / CommentServiceImpl <br>
+▪ LikeService / LikeServiceImpl <br>
 
-### 3) main.jsp (메인 화면)
-▪ 도서 목록을 테이블 형태로 표시 <br>
-▪ 오른쪽에 [등록], [수정], [삭제] 버튼 제공 <br>
-▪ 모든 기능은 비동기 방식(AJAX) 으로 동작 <br>
+### 3) Mapper / mapper.xml
+▪ MemberMapper / MemberMapper.xml <br>
+▪ BoardMapper / BoardMapper.xml <br>
+▪ SeatMapper / SeatMapper.xml <br>
+▪ CommentMapper /CommentMapper.xml <br>
+▪ LikeMapper /LikeMapper.xml <br>
+
 
 <br>
 
 ## 4. 개발 포인트
 ▪ Spring MVC 패턴을 적용하여 Controller - DAO - Mapper 계층 구조로 설계 <br>
-▪ AJAX 비동기 통신을 통해 페이지 새로고침 없이 CRUD 기능 구현 <br>
+▪ AJAX 비동기 통신을 통해 페이지 새로고침 없이 기능 구현 <br>
 ▪ MyBatis Mapper XML을 활용해 SQL을 명확하게 관리 <br>
 ▪ JSP + jQuery로 직관적이고 간결한 사용자 UI 제공 <br>
 
