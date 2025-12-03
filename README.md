@@ -113,7 +113,7 @@
 <br>
 
 ## 5. 기능설명
-### 1) 도서조회/삭제
+### 1) 페이징기능
 ▪ 도서조회: 데이터베이스의 모든 도서 정보를 조회하여 테이블로 표시 <br>
 ▪ 도서삭제: 삭제 버튼 클릭 시 비동기 요청으로 해당 도서 삭제 후 목록 재출력 <br>
 <p align="center">
@@ -121,11 +121,12 @@
 </p>
 
 
-### 2) 도서등록
+### 2) 검색기능
 ▪ 제목, 작가, 출판사, 보유 수, ISBN 입력 후 등록 버튼 클릭 시 비동기 전송 → DB 저장 → 목록 자동 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7fd78e69-9cff-4e4f-a47a-9a5576ddc2fb" width="1000" />
+  <img src="https://github.com/user-attachments/assets/7ec18d50-e6e5-4f65-ae6b-89a2ccad4d81" width="1000" />
 </p>
+
 
 
 ### 3) 도서수정
