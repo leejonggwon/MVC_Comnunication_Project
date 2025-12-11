@@ -39,7 +39,7 @@ DROP TABLE CM_BOARD;
 
 SELECT * FROM CM_BOARD;
 
-DELETE FROM CM_BOARD;
+DELETE FROM CM_BOARD WHERE IDX BETWEEN 124 AND 126;
 
 
 -- 회원--
@@ -153,7 +153,7 @@ SELECT * FROM CM_MEMBER;
 
 --리뉴얼 --
 INSERT INTO CM_MEMBER (MEMID, MEMPASSWORD, MEMNAME, MEMNICKNAME, MEMAGE, MEMGENDER, MEMEMAIL)
-VALUES ('admin','1234','스프링관리자', '스프링관리자', 38, '남자', 'admin@gmail.com');
+VALUES ('admin','1234','관리자', 'MVC관리인', 38, '남자', 'admin@gmail.com');
 
 
 INSERT INTO CM_MEMBER (MEMID, MEMPASSWORD, MEMNAME, MEMNICKNAME, MEMAGE, MEMGENDER, MEMEMAIL)
@@ -180,7 +180,7 @@ DELETE FROM CM_MEMBER;
 SELECT * FROM CM_MEMBER;
 
 
-DELETE FROM CM_BOARD WHERE IDX = 151;
+DELETE FROM CM_BOARD WHERE MEMID = "NVIDIA";
 
 
 INSERT INTO CM_BOARD
@@ -210,8 +210,6 @@ FROM CM_BOARD;
 
 
 
-
-
 INSERT INTO CM_BOARD SELECT IFNULL(MAX(IDX)+1,1),'admin','공지사항 1','1번 공지사항 안내드립니다','스프링관리자',NOW(),0,0,NULL,IFNULL(MAX(BOARDGROUP)+1,1),0,0,1 FROM CM_BOARD;
 INSERT INTO CM_BOARD SELECT IFNULL(MAX(IDX)+1,1),'admin','알림 2','2번 알림 전달드립니다','스프링관리자',NOW(),0,0,NULL,IFNULL(MAX(BOARDGROUP)+1,1),0,0,1 FROM CM_BOARD;
 INSERT INTO CM_BOARD SELECT IFNULL(MAX(IDX)+1,1),'admin','행사 안내 3','3번 행사 일정 안내입니다','스프링관리자',NOW(),0,0,NULL,IFNULL(MAX(BOARDGROUP)+1,1),0,0,1 FROM CM_BOARD;
@@ -220,7 +218,135 @@ INSERT INTO CM_BOARD SELECT IFNULL(MAX(IDX)+1,1),'admin','공지 5','5번 공지
 
 
 
+--리뉴얼--
+CREATE TABLE CM_BOOK(
+	BKNUM INT NOT NULL AUTO_INCREMENT, 
+	BKTITLE VARCHAR(50) NOT NULL,
+	BKAUTHOR VARCHAR(30) NOT NULL,
+	BKCOMPANY VARCHAR(50) NOT NULL,
+	BKISBN VARCHAR(30) NOT NULL,
+	BKCATEGORY VARCHAR(30) NOT NULL,
+	BKCALLNUMBER VARCHAR(30) NOT NULL,
+	BKCOUNT INT DEFAULT 0,
+	PRIMARY KEY(BKNUM)
+)
 
+SELECT * FROM CM_BOOK;
+
+DELETE FROM CM_BOOK;
+DROP TABLE CM_BOOK;
+
+
+INSERT INTO CM_BOOK (BKTITLE, BKAUTHOR, BKCOMPANY, BKISBN, BKCATEGORY, BKCALLNUMBER, BKCOUNT) VALUES
+('천문학 개론', 'Roger Freedman', 'Freeman', '9781319119277', '과학', '520 F83u', 1);
+
+
+--Message--
+CREATE TABLE CM_MESSAGE(
+	MSGIDX INT NOT NULL AUTO_INCREMENT, 
+	TOID VARCHAR(20) NOT NULL, 
+	FROMID VARCHAR(20) NOT NULL, 
+	MSGTITLE VARCHAR(100) NOT NULL,
+	MSGCONTENT VARCHAR(2000) NOT NULL,
+	MSGDATE DATETIME DEFAULT NOW(),
+	MSGIMGPATH VARCHAR(500), 
+	READSTATUS INT DEFAULT 0,   --읽음유무--
+	ARRIVESTATUS INT DEFAULT 0, --도착메세지유무--
+	DELTOID INT DEFAULT 0,     --받는사람이 삭제--
+	DELFROMID INT DEFAULT 0,   --보낸사람이 삭제--
+	PRIMARY KEY(MSGIDX)
+)
+
+
+
+SELECT ARRIVESTATUS FROM CM_MESSAGE WHERE TOID = "admin";
+
+SELECT * FROM CM_MESSAGE;
+
+UPDATE CM_MESSAGE SET ARRIVESTATUS = 0 WHERE TOID = "admin";
+SELECT COUNT(*) FROM CM_MESSAGE WHERE TOID = "admin" AND ARRIVESTATUS = 0;
+
+DELETE FROM CM_MESSAGE;
+DROP TABLE CM_MESSAGE;
+
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 27', '시스템 점검이 내일 새벽 2시에 진행될 예정입니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 28', '신규 기능 업데이트가 완료되었습니다. 자세한 내용은 안내문을 참고하세요.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 29', '사용자 의견을 반영하여 UI 개선 작업을 진행했습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 30', '보안 강화를 위해 비밀번호 변경을 권장드립니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 31', '일부 서비스의 응답 지연 현상이 해결되었습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 32', '정기 서버 점검이 이번 주 금요일에 예정되어 있습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 33', '사용자 활동 로그 정책이 새롭게 변경되었습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 34', '일시적 오류로 중단되었던 기능이 정상화되었습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 35', '보안 업데이트가 적용되었습니다. 서비스 이용에 참고 부탁드립니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('admin', 'samsung', '공지사항 36', '현재 접속자가 증가하여 일부 기능이 느릴 수 있습니다.');
+
+
+
+
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '시스템 점검 예정 안내 – 서비스 이용 관련 중요 공지', 
+'오는 금요일 새벽 1시부터 시스템 점검이 진행될 예정입니다. 이용에 참고 부탁드립니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '신규 기능 배포에 따른 서비스 이용 방법 변경 안내', 
+'금일 업데이트된 신규 기능의 사용 방법이 변경되었으니 공지사항을 확인해주세요.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '서버 성능 개선 작업 일정 및 영향 범위 안내', 
+'보다 안정적인 서비스를 위해 서버 성능 개선 작업을 진행합니다. 작업 시간 동안 일부 기능 사용이 제한될 수 있습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '보안 정책 강화에 따른 사용자 인증 절차 변경 공지', 
+'보안 강화를 위해 로그인 시 추가 인증 절차가 도입될 예정입니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '데이터 백업 작업 사전 안내 – 서비스 일시 중단 예정', 
+'정기 데이터 백업으로 인해 일부 서비스가 잠시 중단됩니다. 자세한 시간은 추후 안내드립니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '긴급 업데이트 적용에 따른 일시적 접속 지연 현상 안내', 
+'보안 패치 적용으로 인해 잠시 접속 지연이 발생할 수 있습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '사용자 의견 반영 결과 및 향후 개선 업데이트 계획 공유', 
+'최근 수집한 사용자 의견을 기반으로 개선 사항을 정리하여 다음 업데이트에 반영할 예정입니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '서비스 장애 복구 완료 보고 및 재발 방지 대책 안내', 
+'금일 발생한 서비스 장애가 정상적으로 복구되었습니다. 상세 원인 및 대책을 공유드립니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '정기 보안 점검 일정 공지 – 개인정보 보호 관련 안내', 
+'개인정보 보호 강화를 위해 정기 보안 점검을 실시합니다. 점검 중 일부 기능이 제한될 수 있습니다.');
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES ('samsung', 'admin', '서비스 최적화를 위한 시스템 환경 설정 변경 예정 안내', 
+'더 나은 사용 환경을 위해 시스템 환경 설정 변경 작업이 예정되어 있으니 참고 부탁드립니다.');
+
+
+
+SELECT * FROM CM_MESSAGE WHERE FROMID = "admin" ORDER BY MSGIDX DESC
 
 
 

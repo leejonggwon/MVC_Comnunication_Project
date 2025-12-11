@@ -44,6 +44,19 @@ public class MemberRestController {
 		Member writerInfo = service.writerInfo(writer); 
 	    return writerInfo;
 	}
+	
+	
+	// 메시지 작성자 프로필 조회
+	@GetMapping("/fromIDInfo")
+	@ResponseBody
+	public Member fromIDInfo(@RequestParam String memID) {  
+		System.out.println("메시지 작성자 프로필 조회");
+		//JSON 형태로 반환된다 (memName, memProfile 등 포함)
+		Member fromIDInfo = service.fromIDInfo(memID); 
+	    return fromIDInfo;
+	}
+	
+	
 }
 
 

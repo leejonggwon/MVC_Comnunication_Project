@@ -25,20 +25,24 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		
-			<div class="navbar-header">
+			<div class="navbar-header">		
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#myNavbar">
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">MVC Communication</a>
+				
+				<a class="navbar-brand" href="#">
+				<img  style="display:inline-block; height:25px; margin-right:5px;" class="img-circle" alt="" src="${cpath}/resources/images/logo2.jpg" />
+				 MVC Communication</a>
 			</div>
 				
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li class="#"><a href="${cpath}/board/list/">커뮤니티</a></li> <!--루트(/)만 입력하면 controller(context path)가 생략되므로, 명시적으로 /controller/를 입력 -->
 					<li><a href="${cpath}/seat/seat/">좌석발권</a></li>
-					<li><a href="${cpath}/seat/rInfo/">발권정보</a></li>			
+					<li><a href="${cpath}/seat/rInfo/">발권정보</a></li>		
+					<li><a href="${cpath}/book/bookSearch/">자료검색</a></li>		
 				</ul>	
 				
 		
@@ -49,16 +53,17 @@
 					<c:if test="${not empty mvo.memProfile}">
 					    <li>				    	
 					        <img style="width:50px; height:50px;" class="img-circle" alt="" src="${cpath}/resources/upload/${mvo.memProfile}" />
-					   		<span>${mvo.memNickName}님 환영합니다</span>
+					   		<span style="padding-left:5px;">${mvo.memNickName}님 (${mvo.memID})</span>
 					    </li>
 					</c:if>
 					
 					<c:if test="${empty mvo.memProfile}">
 					    <li>				    	
 					        <img style="width:50px; height:50px;" class="img-circle" alt="" src="${cpath}/resources/images/default.png" /> 
-					    	<span>${mvo.memNickName}님 환영합니다</span>
+					    	<span style="padding-left:5px;">${mvo.memNickName}님 (${mvo.memID})</span>
 					    </li>
 					</c:if>
+					<li><a href="${cpath}/message/msgList"><span class="glyphicon glyphicon-envelope"></span>&nbsp;메일함&nbsp;<span id="newMsgCount" class="badge"></span></a></li>
 
 					<li><a href="${cpath}/member/updateForm"><span class="glyphicon glyphicon-edit"></span>&nbsp;회원정보수정</a></li>
 					
@@ -71,6 +76,32 @@
 			</div>
 		</div>
 	</nav>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			newMsgCount();
+		});
+		
+		//새 매세지갯수
+		function newMsgCount(){
+			var toID = "${mvo.memID}";
+			
+			$.ajax({
+				url : "${cpath}/message/newMsgCount",    
+				type: "get",      
+				data : {"toID" : toID},
+				dataType: 'json',
+				success: function(data){
+					if(data > 0){
+						$("#newMsgCount").text(data);
+			        }
+				},
+				error: function(){alert("새매세지 불러오기 실패");}
+			});
+		};
+		
+
+	</script>
 	
 </body>
 </html>

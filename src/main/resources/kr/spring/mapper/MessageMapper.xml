@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.spring.mapper.MessageMapper">
+	
+    <!-- SQL문장 프로그래밍  -->
+	<sql id="search">
+		<if test="type=='msgTitle'">
+			AND MSGTITLE LIKE CONCAT('%', #{keyword},'%')
+		</if>
+		<if test="type=='fromID'">
+			AND FROMID LIKE CONCAT('%', #{keyword},'%')
+		</if>
+	</sql>
+	
+	<!-- 메세지리스트 -->
+	<select id="msgList" parameterType="kr.spring.entity.Criteria" resultType="kr.spring.entity.Message">
+		SELECT * FROM CM_MESSAGE WHERE TOID = #{memID} 
+		<include refid="search"/>
+		ORDER BY MSGIDX DESC
+		LIMIT #{pageStart}, #{perPageNum}
+	</select>
+	
+	
+	<!-- 총게시글수 -->
+	<!-- 검색결과에 따라 총게시글수가 변경된다 -->
+	<select id="totalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE TOID = #{memID}
+		<include refid="search"/>
+	</select>
+	
+	<!-- 안읽은 메세지수 -->
+	<select id="readStatus0TotalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE READSTATUS = 0 AND TOID = #{memID}
+		<include refid="search"/>
+	</select>
+	
+	
+	<!-- SQL문장 프로그래밍  -->
+	<sql id="detailSearch">
+		<if test="type=='msgTitle'">
+			AND MSGTITLE LIKE CONCAT('%', #{keyword},'%')
+		</if>
+		<if test="type=='toID'">
+			AND TOID LIKE CONCAT('%', #{keyword},'%')
+		</if>
+	</sql>
+	
+	<!-- 보낸메세지 이력 -->
+	<select id="msgRecordList" parameterType="kr.spring.entity.Criteria"  resultType="kr.spring.entity.Message">
+		SELECT * FROM CM_MESSAGE WHERE FROMID = #{memID} 
+		<include refid="detailSearch"/>
+		ORDER BY MSGIDX DESC
+		LIMIT #{pageStart}, #{perPageNum}
+	</select>
+	
+	<!-- 전체보낸 메세지 수 -->
+	<select id="recordTotalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE FROMID = #{memID}
+		<include refid="detailSearch"/>
+	</select>
+	
+	
+	<!-- 보낸메세지 안읽음수 -->
+	<select id="recordReadStatusTotalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE READSTATUS = 0 AND FROMID = #{memID}
+		<include refid="detailSearch"/>
+	</select>
+	
+	
+	<!-- 메세지상세보기 -->
+	<select id="msgContent" parameterType="int" resultType="kr.spring.entity.Message">
+		SELECT * FROM CM_MESSAGE WHERE MSGIDX = #{msgIdx}
+	</select>
+	
+	
+
+	
+	<!-- 메세지보내기 -->
+	<insert id="sendMsg" parameterType="kr.spring.entity.Message">
+		INSERT INTO CM_MESSAGE(TOID, FROMID, MSGTITLE, MSGCONTENT, MSGIMGPATH)
+		VALUES(#{toID}, #{fromID}, #{msgTitle}, #{msgContent}, #{msgImgpath})
+	</insert>
+	
+	<!-- 받은메세지삭제하기 -->
+	<update id="deleteMsg" parameterType="int">
+		UPDATE CM_MESSAGE SET DELTOID = 1 WHERE MSGIDX = #{msgIdx}
+	</update>
+	
+	<!-- **리스트에서 받은 메세지 삭제하기 -->
+	<update id="deleteMsg2" parameterType="java.util.List">
+		UPDATE CM_MESSAGE SET DELTOID = 1 WHERE MSGIDX IN
+		<foreach collection="idxList" item="msgIdx" open="(" separator="," close=")">
+        	#{msgIdx}
+    	</foreach>
+	</update>
+
+	<!-- readStatus 0 → 1 -->
+	<update id="readStatus1" parameterType="int">
+		UPDATE CM_MESSAGE SET READSTATUS = 1 WHERE MSGIDX = #{msgIdx}
+	</update>
+	
+	<!-- arriveStatus 0 → 1 -->
+	<update id="arriveStatus1" parameterType="String">
+		UPDATE CM_MESSAGE SET ARRIVESTATUS = 1 WHERE TOID = #{memID}
+	</update>
+	
+	<!-- 새롭게 도착한 매세지 갯수 -->
+	<select id="newMsgCount" parameterType="String" resultType="int">
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE TOID = #{toID} AND ARRIVESTATUS = 0
+	</select>
+	
+
+
+	<!-- 보낸메세지삭제하기 -->
+	<update id="recordDeleteMsg" parameterType="int">
+		UPDATE CM_MESSAGE SET DELFROMID = 1 WHERE MSGIDX = #{msgIdx}
+	</update>
+
+
+	<!-- 보낸메세지 체크삭제 -->
+	<update id="deleteRecordMsg2" parameterType="java.util.List">
+		UPDATE CM_MESSAGE SET DELFROMID = 1 WHERE MSGIDX IN
+		<foreach collection="idxList" item="msgIdx" open="(" separator="," close=")">
+        	#{msgIdx}
+    	</foreach>
+	</update>
+	
+	
+	
+
+
+
+</mapper>

@@ -13,11 +13,20 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+</style>
+ 
 </head>
 <body>
-	
 	<div class="container">
-		<h2>MVC Communication</h2>
+	
+		<h2><img  style="display:inline-block; height:45px; margin-right:1px;" class="img-circle" alt="" src="${cpath}/resources/images/logo2.jpg" /> MVC University Communication</h2>
 		<div class="panel panel-default">
 			<div class="panel-heading">Login</div>
 			<div class="panel-body">
@@ -35,14 +44,82 @@
 					<tr>
 						<td colspan ="2">
 							<span id="passMessage" style="text-align:center"></span> 
-							<input type="submit" class="btn btn-primary" value="로그인">
+							<input type="submit" class="btn btn-success" value="로그인">
 							<a type="button" class="btn btn-warning" href="${cpath}/member/joinForm">회원가입</a>														
 							<!-- <button class="btn btn-warning" onclick="location.href='${cpath}/member/joinForm'">회원가입하기</button> -->
 						</td>
 					</tr>
-					
 				</table>
-			</form>
+			</form> <!-- 로그인폼 -->
+			
+			<!-- 이미지 슬라이드 -->
+			<div class="panel-body">
+		    <div id="myCarousel" class="carousel slide">
+		      <!-- Indicators -->
+		      <ol class="carousel-indicators">
+		        <li class="item1 active"></li>
+		        <li class="item2"></li>
+		        <li class="item3"></li>
+		        <li class="item4"></li>
+		      </ol>
+		
+	     	    <!-- Wrapper for slides -->
+		      <div class="carousel-inner" role="listbox">
+		
+		        <div class="item active">
+		          <img src="${cpath}/resources/loginImgs/communication1.jpg" alt="Chania" width="460" height="345">
+		          <div class="carousel-caption">
+		            <h3>커뮤니티 게시판</h3>
+		            <p>게시물검색, 페이징, 이미지첨부, 답글, 댓글, 좋아요 기능</p>
+		          </div>
+		        </div>
+		
+		        <div class="item">
+		          <img src="${cpath}/resources/loginImgs/communication2.png" alt="Chania" width="460" height="345">
+		          <div class="carousel-caption">
+		            <h3>열람실 좌석발권기능</h3>
+		            <p>좌석발권, 좌석반납, 현재발권정보, 발권이력</p>
+		          </div>
+		        </div>
+		    
+		        <div class="item">
+		          <img src="${cpath}/resources/loginImgs/communication3.png" alt="Flower" width="460" height="345">
+		          <div class="carousel-caption">
+		            <h3>자료검색</h3>
+		            <p>항목별 자료검색, 자료등록 및 수정(관리자)</p>
+		          </div>
+		        </div>
+		
+		        <div class="item">
+		          <img src="${cpath}/resources/loginImgs/communication4.png" alt="Flower" width="460" height="345">
+		          <div class="carousel-caption">
+		            <h3>메일기능</h3>
+		            <p>메일발송, 수신자아이디확인, 메일삭제, 보낸메일이력, 열람상태 확인</p>
+		          </div>
+		        </div>
+		        
+		        <div class="item">
+		          <img src="${cpath}/resources/loginImgs/communication5.png" alt="Flower" width="460" height="345">
+		          <div class="carousel-caption">
+		            <h3>회원관리기능</h3>
+		            <p>아이디중복확인, 비밀번호 일치여부확인, 프로필이미지 업데이트, 회원정보수정</p>
+		          </div>
+		        </div>
+		  
+		      </div>
+		
+	  	    <!-- Left and right controls -->
+		      <a class="left carousel-control" href="#myCarousel" role="button">
+	   	        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		      </a>
+		      <a class="right carousel-control" href="#myCarousel" role="button">
+		        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		      </a>
+	  	    </div>	
+			</div><!-- 이미지 슬라이드 -->
+			
 			</div>
 			<div class="panel-footer">MVC Communication - All rights reserved</div>
 		</div>
@@ -82,8 +159,35 @@
 					$("#messageType").attr("class", "modal-content panel-success");
 				}
 			$("#myMessage").modal("show"); //모달창 실행
-			}
+			};
+		
+			  // Activate Carousel
+			  $("#myCarousel").carousel();
+			    
+			  // Enable Carousel Indicators
+			  $(".item1").click(function(){
+			    $("#myCarousel").carousel(0);
+			  });
+			  $(".item2").click(function(){
+			    $("#myCarousel").carousel(1);
+			  });
+			  $(".item3").click(function(){
+			    $("#myCarousel").carousel(2);
+			  });
+			  $(".item4").click(function(){
+			    $("#myCarousel").carousel(3);
+			  });
+			    
+			  // Enable Carousel Controls
+			  $(".left").click(function(){
+			    $("#myCarousel").carousel("prev");
+			  });
+			  $(".right").click(function(){
+			    $("#myCarousel").carousel("next");
+			  });
 		});
+		
+		
 		
 		
 	</script>

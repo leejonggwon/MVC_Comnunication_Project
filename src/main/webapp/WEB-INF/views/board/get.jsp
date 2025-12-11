@@ -21,26 +21,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 
-
 </style>
 </head>
 <body>
 	<div class="container">
-	  <h2>MVC Communication</h2>
+	<%@ include file="/WEB-INF/views/common/header.jsp" %>
 	  <div class="panel panel-default">
 		<div class="panel-heading">Board Content</div>
 		<div class="panel-body">
 		<table class="table table-bordered table-hover">
 			<tr>
-				<td>번호</td>
+				<td style="text-align: center">번호</td>
 				<td>${vo.idx}</td>
 			</tr>
 			<tr>
-				<td>제목</td>
+				<td style="text-align: center">제목</td>
 				<td><c:out value="${vo.title}"/></td>
 			</tr>
 			<tr>
-				<td>내용</td>
+				<td style="text-align: center">내용</td>
 				<td>
 					<textarea class="form-control" readonly="readonly" rows="8" cols=""><c:out value="${vo.content}"/></textarea>
 					
@@ -52,15 +51,15 @@
 				</td>
 			</tr>
 			<tr>
-				<td>작성자</td>
+				<td style="text-align: center">작성자</td>
 				<td>${vo.writer}</td>
 			</tr>
 			<tr>
-				<td>조회수</td>
+				<td style="text-align: center">조회수</td>
 				<td>${vo.count}</td>
 			</tr>
 			<tr>
-				<td>공감수</td>
+				<td style="text-align: center">공감수</td>
 				<td id="likeView"></td> 	
 			</tr>
 			<tr>
@@ -104,14 +103,14 @@
 				<input type="hidden" name="memProfile" value="${mvo.memProfile}">				
 				<table id="cmtTbl" class="table table-bordered table-hover">
 					<tr>
-						<td>댓글작성자</td>
+						<td style="text-align: center; vertical-align: middle;">댓글작성자</td>
 						<td><input readonly="readonly" type="text" name="memNickName" value="${mvo.memNickName}" class="form-control"></td> 
 						<td style="text-align:center; vertical-align:middle; width:80px;">
 							<button class="btn btn-default btn-sm" type="reset" id="fclear">취소</button>
 						</td>
 					</tr>
 					<tr>
-						<td>댓글내용</td>
+						<td style="text-align: center; vertical-align: middle;">댓글내용</td>
 						<td>
 							<textarea placeholder="댓글을 입력해주세요." rows="2" cols="" " name="cmtContent" class="form-control"></textarea>
 						</td> 

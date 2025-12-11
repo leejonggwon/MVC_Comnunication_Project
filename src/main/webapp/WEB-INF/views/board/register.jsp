@@ -18,12 +18,11 @@
 </head>
 <body>
 	<div class="container">
-	  <h2>Spring MVC09</h2>
+	<%@ include file="/WEB-INF/views/common/header.jsp" %>
 	  <div class="panel panel-default">
 		<div class="panel-heading">Board</div>
 		<div class="panel-body">
-			<form id="frm">  <!-- POST방식: 작성한 글 등록 -->	
-			
+			<form id="frm"> 	
 			<table class="table table-hover table-bordered">
 			<input id="memID" type="hidden" name="memID" value="${mvo.memID}">
 			
@@ -32,11 +31,11 @@
 			
 				<tr>
 					<td>제목</td>
-					<td><input id="idx" type="text" name="title" class="form-control"></td>
+					<td><input required id="title" type="text" name="title" class="form-control"></td>
 				</tr>	
 				<tr>	
 					<td>내용</td>
-					<td><textarea id="content" rows="10" cols="" name="content" class="form-control"></textarea></td>
+					<td><textarea required id="content" rows="10" cols="" name="content" class="form-control"></textarea></td>
 				</tr>
 				<tr>
 					<td>파일</td>
@@ -67,6 +66,9 @@
 		$(document).ready(function() {
 			$("button").on("click", function(e) {
 				var formData = $("#frm");
+				//alert(formData);
+				//alert(formData[0]); //DOM 객체
+				
 				var btn = $(this).data("btn");
 				
 				if(btn == "list"){
@@ -87,7 +89,15 @@
 					
 					formData.find("#page").remove();
 					formData.find("#perPageNum").remove();
-					}
+					
+					var formEl = formData[0]; //jQuery 객체에서 진짜 DOM 요소를 꺼내는 것
+
+					//checkValidity(): required 검사 통과했는지 확인하는 함수
+					if (!formEl.checkValidity()) { //올바르게 입력하면 true 이지만 !이므로→ false
+					    formEl.reportValidity();   //경고를 띄운다
+					    return;
+					};
+				}
 				formData.submit();
 			});
 		});

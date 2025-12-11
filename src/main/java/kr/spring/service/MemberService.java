@@ -21,5 +21,9 @@ public interface MemberService {
 
 		//아이디중복체크
 		public Member registerCheck(String memID);
+		
+		//메시지 작성자 프로필 조회
+		public Member fromIDInfo(String memID);
+
 
 }

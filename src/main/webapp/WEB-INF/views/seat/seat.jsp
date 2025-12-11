@@ -21,7 +21,7 @@
 
 	<div class="container">
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
-	  <h2>MVC Communication</h2>
+	 
 	  <div class="panel panel-default">
 		<div class="panel-heading">좌석발권</div>
 		<div style="text-align: center" class="panel-body">	

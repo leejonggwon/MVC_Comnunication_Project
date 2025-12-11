@@ -21,12 +21,10 @@
 	<!-- 정적 include 이라서 WEB-INF 안에 있는 JSP를 직접 읽어올 수 있다 -->
 	<%@ include file="/WEB-INF/views/common/header.jsp" %> 
 
-		<h2>MVC Communication</h2>
+		
 		<div class="panel panel-default">
-			<div class="panel-heading">
-			
-					※ 욕설, 비방, 혐오 표현 등 타인을 불쾌하게 하는 내용은 금지됩니다.
-			
+			<div class="panel-heading">	
+					커뮤니티 - 욕설, 비방, 혐오 표현 등 타인을 불쾌하게 하는 내용은 금지됩니다.
 			</div>
 			<div class="panel-body">
 				<table style="width: 100%; table-layout: fixed; border-collapse: collapse;" 
@@ -53,7 +51,7 @@
 						                		<c:forEach begin="0" end="${vo.boardLevel}" step="1">
 						                			<span style="padding-left: 10px"></span>
 						                		</c:forEach>
-						                		ㄴ[댓글]
+						                		ㄴ[답글]
 						                	</c:if>
 				                			작성자에 의해 삭제된 게시글 입니다.
 				                		</a>
@@ -65,14 +63,14 @@
 						                		<c:forEach begin="0" end="${vo.boardLevel}" step="1">
 						                			<span style="padding-left: 10px"></span>
 						                		</c:forEach>
-						                		ㄴ[댓글]
+						                		ㄴ[답글]
 						                	</c:if>
 						                		<c:out value="${vo.title}"></c:out>				              
 						                </a>
 						            </c:if>   
 				                </td> 			                
 				          
-				                <td style="text-align: center" class="writer" data-writer="${vo.writer}">
+				                <td style="text-align:center" class="writer" data-writer="${vo.writer}">
 								   <a href="#"> ${vo.writer} </a>
 								</td>
 								
@@ -107,7 +105,7 @@
 						<div class="form-group">
 							<input type="text" value="${pageMaker.cri.keyword}" class="form-control" name="keyword">
 						</div>
-						<button type="submit" class="btn btn-success">검색</button>									
+						<button type="submit" class="btn btn-light btn-sm">검색</button>									
 					</form>
 				</div>
 				
@@ -211,6 +209,7 @@
 	        <p id="writerNickName" style="font-size:16px; font-weight:bold;"></p>  
 	        <p id="writerID" style="font-size:16px;"></p>           
 	        <p id="writerName" style="font-size:16px;"></p>
+	        <button id="regBtnProfile" class="btn btn-primary btn-sm">메시지 보내기</button>
 	      </div>
 	      
 	      <div class="modal-footer">
@@ -273,6 +272,7 @@
 			        dataType: "json",
 			        success: function(writerInfo) {	        			        	
 			        	$("#writerID").text("ID: " + writerInfo.memID);
+			        	$("#writerID").data("ID", writerInfo.memID);
 			        	$("#writerNickName").text("Nick: " + writerInfo.memNickName);
 			            $("#writerName").text("Name: "+ writerInfo.memName);
 			            $("#writerImg").attr("src",  writerInfo.memProfile             // writerInfo.memProfile에 
@@ -284,6 +284,11 @@
 			            alert("작성자 정보를 가져오는데 실패했습니다.");
 			        }
 			    });
+			});
+			
+			//프로필에서 메시지보내기 폼으로 이동
+			$("#regBtnProfile").on("click", function () {
+			    window.location.href = "${cpath}/message/sendMsgForm?toID=" + $("#writerID").data("ID");
 			});
 			
 						
@@ -305,7 +310,7 @@
 			}
 			
 			
-		});
+		}); //ready
 		
 		
 		//게시글등록성공시 모달 

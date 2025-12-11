@@ -52,4 +52,9 @@ public class MemberServiceImpl implements MemberService {
 			return mapper.registerCheck(memID);
 		}
 	
+		//메시지 작성자 프로필 조회
+		@Override
+		public Member fromIDInfo(String memID) {
+			return mapper.fromIDInfo(memID);
+		}
 }

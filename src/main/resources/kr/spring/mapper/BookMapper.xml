@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.spring.mapper.BookMapper">
+
+	<!-- SQL문장 프로그래밍  -->
+	<sql id="search">
+		<if test="type=='bkTitle'">
+			WHERE BKTITLE LIKE CONCAT('%', #{keyword},'%')
+		</if>
+		<if test="type=='bkAuthor'">
+			WHERE BKAUTHOR LIKE CONCAT('%', #{keyword},'%')
+		</if>
+		<if test="type=='bkCompany'">
+			WHERE BKCOMPANY LIKE CONCAT('%', #{keyword},'%')
+		</if>
+	</sql>
+
+	
+	<!-- 도서리스트 -->
+	<select id="bookList" resultType="kr.spring.entity.Book"> 
+		SELECT * FROM CM_BOOK 
+		<include refid="search"/>
+		ORDER BY BKNUM DESC
+		LIMIT #{pageStart}, #{perPageNum}
+	</select>	
+
+	<!-- 새 글 작성 -->
+	<insert id="bookInsert" parameterType="kr.spring.entity.Book"> 
+		INSERT INTO CM_BOOK(BKTITLE, BKAUTHOR, BKCOMPANY, BKISBN, BKCATEGORY, BKCALLNUMBER, BKCOUNT) 
+		VALUES (#{bkTitle}, #{bkAuthor}, #{bkCompany}, #{bkIsbn}, #{bkCategory}, #{bkCallNumber}, #{bkCount})
+	</insert>
+	
+
+	
+	<!-- 삭제하기 -->
+	<delete id="bookDelete" parameterType="int">
+		DELETE FROM CM_BOOK WHERE BKNUM = #{bkNum}
+	</delete>
+	
+	<!--글 상세보기-->
+	<select id="bookContent" parameterType="int" resultType="kr.spring.entity.Book"> 
+		SELECT * FROM CM_BOOK WHERE BKNUM = #{bkNum}
+	</select>
+	
+	<!-- 글수정 -->
+	<update id="bookUpdate" parameterType="kr.spring.entity.Book">
+		UPDATE CM_BOOK SET BKCOUNT = #{bkCount} WHERE BKNUM = #{bkNum}
+	</update>
+	
+	
+	<!-- 총게시글수 -->
+	<select id="totalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
+		SELECT COUNT(*) FROM CM_BOOK
+		<include refid="search"/>
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

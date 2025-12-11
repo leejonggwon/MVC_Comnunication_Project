@@ -5,6 +5,8 @@ import lombok.Data;
 @Data //Getter Setter
 public class Criteria { //기준이라는 뜻
 	
+	private String memID;
+	
 	//검색기능에 필요한 변수 
 	private String type;    //writer, title, content에 대한 값을 담기는 변수
 	private String keyword; //검색내용

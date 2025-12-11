@@ -36,6 +36,13 @@
   		WHERE MEMID = #{memID}
 	</update>
 	
+	<!-- 메시지 작성자 프로필 조회 -->
+	<select id="fromIDInfo" parameterType="string" resultType="kr.spring.entity.Member">
+	    SELECT *
+	    FROM CM_MEMBER
+	    WHERE MEMID = #{memID}
+	</select>
+	
 	
 
 </mapper>

@@ -9,8 +9,8 @@ import kr.spring.entity.Criteria;
 
 
 
-// Service 클래스에서 사용할 기능의 이름을 정의하는 인터페이스
-public interface BoardService {
+	// Service 클래스에서 사용할 기능의 이름을 정의하는 인터페이스
+	public interface BoardService {
 	
 	//게시글 전체목록 보기 기능
 	//Service는 Controller에게 view네임(String)이 아닌 데이터(게시글목록)을 돌려준다 

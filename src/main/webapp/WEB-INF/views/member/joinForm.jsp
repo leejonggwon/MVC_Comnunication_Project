@@ -17,9 +17,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
+	<br>
+	<br>
 	<div class="container">
-		<h2>MVC Communication</h2>
+		
 		<div class="panel panel-default">
 			<div class="panel-heading">Sign up</div>
 			<div class="panel-body">
@@ -29,7 +30,7 @@
 				<table style="text-align: center; border: 1px solid #dddddd" class ="table table-borderd">
 					<tr>
 						<td style="width: 110px; vertical-align: middle;">아이디</td>
-						<td><input type="text" name="memID" id="memID" class="form-control" maxlength="20" placeholder="아이디를 입력하세요"></td>
+						<td><input required="required" type="text" name="memID" id="memID" class="form-control" maxlength="20" placeholder="아이디를 입력하세요"></td>
 						<td style="width: 110px;"><button type="button" onclick="registerCheck()" class="btn btn-primary">중복확인</button></td>						
 					</tr>
 					<tr>
@@ -43,6 +44,12 @@
 						<td colspan ="2"><input type="password" onkeyup="passwordCheck()" name="memPassword2" id="memPassword2" class="form-control" maxlength="20" placeholder="비밀번호를 확인하세요"></td>					
 					</tr>
 					<tr>
+						<td style="width: 200px; vertical-align: middle;">비밀번호일치 여부 확인</td>
+						<td colspan ="2" style="text-align: center">
+							<span id="passMessage"></span> <!-- 비밀번호 일치 여부 메시지 표시-->															
+						</td>
+					</tr>
+					<tr>
 						<td style="width: 110px; vertical-align: middle;">사용자이름</td>
 						<td colspan ="2"><input required="required" type="text" name="memName" id="memName" class="form-control" maxlength="20" placeholder="이름을 입력하세요"></td>				
 					</tr>
@@ -52,7 +59,7 @@
 					</tr>
 					<tr>
 						<td style="width: 110px; vertical-align: middle;">나이</td>
-						<td colspan ="2"><input type="number" name="memAge" id="memAge" class="form-control" maxlength="20" placeholder="나이를 입력하세요"></td>				
+						<td colspan ="2"><input required="required" type="number" name="memAge" id="memAge" class="form-control" maxlength="20" placeholder="나이를 입력하세요"></td>				
 					</tr>
 					
 					<tr>
@@ -72,14 +79,14 @@
 					</tr>
 					<tr>
 						<td style="width: 110px; vertical-align: middle;">이메일</td>
-						<td colspan ="2"><input type="email" name="memEmail" id="memEmail" class="form-control" maxlength="50" placeholder="이메일을 입력하세요"></td>				
+						<td colspan ="2"><input required="required" type="email" name="memEmail" id="memEmail" class="form-control" maxlength="50" placeholder="이메일을 입력하세요"></td>				
 					</tr>
 					<tr>
 						<td colspan ="3" style="text-align: center">
-							<span id="passMessage"></span> <!-- 비밀번호 일치 여부 메시지 표시-->
+							<span id="passMessage"></span> <!-- 비밀번호 일치 여부 메시지 표시-->						
 							<input type="submit" class="btn btn-primary" value="등록">
 							<input type="reset" class="btn btn-warning" value="취소">						
-							<button class="btn btn-success" onclick="location.href='${cpath}/'">로그인폼</button>				
+							<a href="${cpath}/" class="btn btn-success">로그인폼</a>				
 						</td>
 					</tr>
 					
@@ -147,7 +154,7 @@
 				success:function(data){ //data결과값 받아온다
 					//중복유무확인 → (data=1 사용가능, data=0 사용불가능)
 					if(data == 1){
-						$("#checkMessage").text("사용할 수 있는 아이디 입니다");
+						$("#checkMessage").text(memID +"는사용할 수 있는 아이디 입니다");
 						$("#checkType").attr("class", "modal-content panel-success");
 					}else{
 						$("#checkMessage").text("사용할 수 없는 아이디 입니다");

@@ -20,7 +20,7 @@
 
 	<div class="container">
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
-	  <h2>MVC Communication</h2>
+	
 	  <div class="panel panel-default">
 		<div class="panel-heading">발권정보</div>
 		<div id="nowRview" class="panel-body">
@@ -128,7 +128,7 @@
 			    listHtml += "</tbody>";			  
 			    listHtml += "<tr>";	
 			    listHtml += "<td colspan='4' align='center'>";	
-			    listHtml += "<button onclick='returnSeat()' class='btn btn-primary'>좌석반납하기</button>";	
+			    listHtml += "<button onclick='returnSeat()' class='btn btn-warning btn-sm'>좌석반납하기</button>";	
 			    listHtml += "</td>";	
 			    listHtml += "</tr>";
 			    listHtml += "</table>";

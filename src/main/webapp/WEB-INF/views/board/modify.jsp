@@ -22,7 +22,8 @@
 </head>
 <body>
 	<div class="container">
-	  <h2>MVC Communication</h2>
+	<%@ include file="/WEB-INF/views/common/header.jsp" %>
+	
 	  <div class="panel panel-default">
 		<div class="panel-heading">Board Edit</div>
 		<div class="panel-body">
