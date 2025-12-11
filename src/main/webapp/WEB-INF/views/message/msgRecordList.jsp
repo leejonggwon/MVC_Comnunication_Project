@@ -22,7 +22,6 @@
 	  <div class="panel panel-default">
 		<div class="panel-heading"><span class="glyphicon glyphicon-send"></span>
 			<span style="padding-left:5px;">보낸 메일함 ${recordTotalCount}</span> 	
-			<span style="padding-left:10px;">안읽음 ${recordReadStatusTotalCount}</span> 	
 		</div>
 		<div class="panel-body">
 		
@@ -253,7 +252,7 @@
 		    });
 		    
 		    //pageFrm 전송폼
-		    pageFrm.attr("action", "${cpath}/message/DeleteRecordMsg2"); //주소
+		    pageFrm.attr("action", "${cpath}/message/deleteRecordMsg2"); //주소
 			pageFrm.attr("method", "post"); //전송방식
 			pageFrm.submit();
 		}); //삭제체크박스버튼

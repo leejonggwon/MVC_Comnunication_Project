@@ -24,13 +24,13 @@
 	<!-- 총게시글수 -->
 	<!-- 검색결과에 따라 총게시글수가 변경된다 -->
 	<select id="totalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
-		SELECT COUNT(*) FROM CM_MESSAGE WHERE TOID = #{memID}
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE DELTOID = 0 AND TOID = #{memID}
 		<include refid="search"/>
 	</select>
 	
 	<!-- 안읽은 메세지수 -->
 	<select id="readStatus0TotalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
-		SELECT COUNT(*) FROM CM_MESSAGE WHERE READSTATUS = 0 AND TOID = #{memID}
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE DELTOID = 0 AND READSTATUS = 0 AND TOID = #{memID}
 		<include refid="search"/>
 	</select>
 	
@@ -55,7 +55,7 @@
 	
 	<!-- 전체보낸 메세지 수 -->
 	<select id="recordTotalCount" resultType="int" parameterType="kr.spring.entity.Criteria" >
-		SELECT COUNT(*) FROM CM_MESSAGE WHERE FROMID = #{memID}
+		SELECT COUNT(*) FROM CM_MESSAGE WHERE DELFROMID = 0 AND FROMID = #{memID}
 		<include refid="detailSearch"/>
 	</select>
 	
