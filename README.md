@@ -225,9 +225,8 @@
   <img src="https://github.com/user-attachments/assets/20f0a64f-0f82-480e-a688-ba863262144a" width="700" />
 </p>
 
-### 프로필등록, 회원정보수정 기능
-▪ 댓글 등록, 댓글삭제 
- <br>
+### 프로필 이미지 업데이트
+<br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dd5f5947-9e2c-4f26-9967-2ca24eb0f15e" width="700" />
 </p>
