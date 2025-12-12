@@ -170,6 +170,7 @@
 
 ### 게시글 기능
 ▪ 게시글목록 <br>
+▪ 게시글 상세보기 할 때마다 조회수 1씩 증가 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5b7e897f-3798-48e7-9a0c-b68c88f5d718" width="700" />
 </p>
