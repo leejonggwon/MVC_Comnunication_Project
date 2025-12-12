@@ -229,8 +229,9 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b9c91005-9bf0-4e89-a39a-f96315c46d61" width="700" />
+  <img src="https://github.com/user-attachments/assets/ea25b674-ba77-4274-8d89-80a540cbac17" width="700" />
 </p>
+
 
 ### 답글 기능
 ▪ 답글 입력 <br>
