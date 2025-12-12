@@ -250,7 +250,7 @@
 ▪ 현재 발권 정보 및 과거 발권 기록 조회 기능 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/66b84b81-0009-4ce8-bab9-b0bce9c781b1" width="700" />
+  <img src="https://github.com/user-attachments/assets/4d48fa39-f5a7-4725-bedd-a9e998489841" width="700" />
 </p>
 
 <br>
