@@ -94,13 +94,13 @@
 
 
 ## 2. 개발환경
-▪ 개발 언어: Java 1.8 <br>
-▪ 프레임워크: Spring Framework 5.0.7.RELEASE <br>
-▪ 데이터베이스: MySQL 5.1 + MyBatis 3.4.6 <br>
-▪ 웹 레이어: JSP, JSTL, Servlet 3.1, jQuery, AJAX, HTML/CSS <br>
-▪ 로깅/유틸: SLF4J, Log4j, Lombok <br>
-▪ 데이터베이스 연결: HikariCP, Spring JDBC <br>
-▪ 개발 도구: eGovFrame 4.0.0, Eclipse, Apache Tomcat 9 <br>
+▪ 개발 언어: Java 1.8 <br><br>
+▪ 프레임워크: Spring Framework 5.0.7.RELEASE <br><br>
+▪ 데이터베이스: MySQL 5.1 + MyBatis 3.4.6 <br><br>
+▪ 웹 레이어: JSP, JSTL, Servlet 3.1, jQuery, AJAX, HTML/CSS <br><br>
+▪ 로깅/유틸: SLF4J, Log4j, Lombok <br><br>
+▪ 데이터베이스 연결: HikariCP, Spring JDBC <br><br>
+▪ 개발 도구: eGovFrame 4.0.0, Eclipse, Apache Tomcat 9 <br><br>
 <br>
 
 ## 3. 주요기능 구성 
