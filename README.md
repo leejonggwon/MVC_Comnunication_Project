@@ -255,10 +255,6 @@
 
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a3f6ae3-09c3-4523-8ada-63b9f04c5348" width="700" />
-</p>
-<br>
-<p align="center">
   <img src="https://github.com/user-attachments/assets/da917843-c222-4312-b2d3-1ddcfa740a87" width="700" />
 </p>
 <br>
