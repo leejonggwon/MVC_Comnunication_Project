@@ -326,9 +326,13 @@
 
 ▪ 관리자는 자료 등록 및 수정, 삭제 등 접근 가능 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b2c9cd1d-be97-4c08-8974-ffce61128b9a" width="700" />
+  <img src="https://github.com/user-attachments/assets/0fb6fac7-7102-4aad-aa10-99afe4e6b354" width="700" />
 </p>
 <br>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cf39b06c-bc58-4c0f-99bb-1ed5b8c49c3f" width="700" />
+</p>
+<br>
 
 
