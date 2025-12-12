@@ -249,3 +249,31 @@
 <br>
 
 
+### 메세지
+
+▪ 받은 메세지 조회 <br>
+▪ 받은 메세지 수, 안읽은 메세지 수 표시<br>
+▪ 열람/미열람 상태 표시 <br>
+▪ 메세지 작성 <br>
+▪ 체크박스로 선택하여 메세지 삭제 <br>
+▪ 발신자 아이디, 제목 등 옵션 별 검색 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dae99c42-4b00-4bed-a322-877f94e66e2b" width="700" />
+</p>
+<br>
+
+▪ 발신자 아이디 클릭시 작성자 정보 프로필 및 메세지 보내기버튼 <br>
+▪ 보내기버튼 클릭시 발신자를 기준으로 메세지작성 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/705dea3b-1fad-4315-8ca3-7853d0f12ae5" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5408e1c-d19c-4d66-ab25-1b5e2cbb21d5" width="700" />
+</p>
+<br>
+
+
+
+<br>
+
