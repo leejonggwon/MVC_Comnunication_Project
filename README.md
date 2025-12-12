@@ -270,7 +270,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7daf435d-1931-459b-9b65-ba556c39709f" width="700" />
+  <img src="https://github.com/user-attachments/assets/0ff3c1bf-1442-4f1b-b17e-dfaaf1f08334" width="700" />
 </p>
 <br>
 
