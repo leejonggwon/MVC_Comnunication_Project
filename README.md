@@ -225,9 +225,20 @@
   <img src="https://github.com/user-attachments/assets/20f0a64f-0f82-480e-a688-ba863262144a" width="700" />
 </p>
 
-
-
-
+### 프로필등록, 회원정보수정 기능
+▪ 댓글 등록, 댓글삭제 
+ <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dd5f5947-9e2c-4f26-9967-2ca24eb0f15e" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a3f6ae3-09c3-4523-8ada-63b9f04c5348" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7dcc091d-196a-4ddc-8c9f-5e29a5ab4969" width="700" />
+</p>
 
 
 
