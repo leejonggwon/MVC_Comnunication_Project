@@ -216,9 +216,15 @@
 
 
 ### 좋아요 기능
+▪ 좋아요 버튼 누르면 실시간 반영 <br>
 ▪ 한 게시물당 좋아요 1회 제한  <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/857baa6a-3d77-4c92-9316-4623ecedd5bd" width="700" />
+  <img src="https://github.com/user-attachments/assets/ebba14ae-58e9-4bea-a988-c3109df47188" width="700" />
+</p>
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b9c91005-9bf0-4e89-a39a-f96315c46d61" width="700" />
 </p>
 
 ### 답글 기능
