@@ -186,9 +186,14 @@
 
 ▪ 게시글수정 <br>
 ▪ 게시글 삭제 <br>
+▪ 답글 삭제시 "작성자에 의해 삭제된 게시글입니다" 표시 <br>
 ▪ 게시글 목록으로 이동 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ec86688e-1c55-4a6f-8235-bbbcaf023806" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b08a566b-a55a-4d16-a10c-9153ca70eb75" width="700" />
 </p>
 <br>
 
@@ -217,7 +222,7 @@
 
 ### 좋아요 기능
 ▪ 좋아요 버튼 누르면 실시간 반영 <br>
-▪ 한 게시물당 좋아요 1회 제한  <br>
+▪ 한 게시물당 좋아요 1회 제한 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ebba14ae-58e9-4bea-a988-c3109df47188" width="700" />
 </p>
@@ -228,7 +233,10 @@
 </p>
 
 ### 답글 기능
-▪ 답글 입력, 답글 수정, 답글삭제 
+▪ 답글 입력 <br>
+▪ 답글 수정 <br>
+▪ 답글 삭제 <br>
+▪ 답글 삭제시 "작성자에 의해 삭제된 게시글입니다" 표시<br>
  <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/914e5327-c125-4770-a3db-aa747a5d7c5b" width="700" />
@@ -241,7 +249,9 @@
 
 
 ### 댓글 기능
-▪ 댓글 등록, 댓글삭제 
+▪ 댓글 등록 <br>
+▪ 댓글 등록 <br>
+▪ 댓글 삭제 시 “삭제된 댓글입니다” 표시<<br>
  <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/20f0a64f-0f82-480e-a688-ba863262144a" width="700" />
