@@ -275,7 +275,7 @@
 <br>
 
 ▪ 발신자 아이디 클릭 시 작성자 프로필 확인 및 메시지 전송 버튼 제공 <br>
-▪ 보내기 버튼 클릭 시 해당 발신자를 기준으로 메시지 작성 화면으로 이동 <br>
+▪ 보내기 버튼 클릭 시 해당 발신자 어아다 기준으로 메시지 작성 화면으로 이동 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b56f2461-9a6d-44df-9781-0dc4c73a67d2" width="700" />
 </p>
@@ -285,6 +285,12 @@
 </p>
 <br>
 
-
+▪ 수신한 메시지 확인 <br>
+▪ 발신자 아이디 기준으로 메시지 작성 화면으로 이동 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1f884cbe-aec3-438e-af61-8daa87211608" width="700" />
+</p>
 <br>
+
+
 
