@@ -70,8 +70,10 @@
 
 #### 10. 좌석 발권 기능
 10-1. 지정 좌석 발권 <br>
-10-2. 발권 좌석 반납기능 <br>
-10-3. 현재 발권 정보 및 과거 발권 기록 조회 기능  <br>
+10-2. 발권 후 다른 좌석을 다시 발권하려 할 경우 “현재 사용 중인 좌석이 있습니다”라는 경고창을 출력 <br>
+10-3. 다른 이용자가 사용 중인 좌석은 발권할 수 없도록 제한한다 <br>
+10-4. 발권 좌석 반납기능 <br>
+10-5. 현재 발권 정보 및 과거 발권 기록 조회 기능  <br>
 <br>
 
 #### 11. 자료검색
@@ -238,6 +240,32 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7dcc091d-196a-4ddc-8c9f-5e29a5ab4969" width="700" />
 </p>
+
+### 좌석 발권 기능
+
+▪ 지정 좌석 발권
+▪ 발권 후 다른 좌석을 다시 발권하려 할 경우 “현재 사용 중인 좌석이 있습니다”라는 경고창을 출력
+▪ 다른 이용자가 사용 중인 좌석은 발권할 수 없도록 제한한다
+▪ 발권 좌석 반납기능 
+▪ 현재 발권 정보 및 과거 발권 기록 조회 기능 
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/66b84b81-0009-4ce8-bab9-b0bce9c781b1" width="700" />
+</p>
+
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a3f6ae3-09c3-4523-8ada-63b9f04c5348" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/da917843-c222-4312-b2d3-1ddcfa740a87" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a60243e9-81d3-493e-b4ea-e78f0a2a1cb3" width="700" />
+</p>
+
 
 
 
