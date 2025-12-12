@@ -254,11 +254,23 @@
 ▪ 수신한 메시지 내역을 확인 <br>
 ▪ 받은 메세지 수 및 미열람 메세지 수 표시<br>
 ▪ 메시지 열람 여부(열람/미열람) 상태 표시 <br>
-▪ 사용자가 메시지를 작성할 수 있는 기능 <br>
 ▪ 체크박스로 선택한 메시지를 삭제 <br>
 ▪ 발신자 아이디 및 제목 등 조건별로 메시지를 검색 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dae99c42-4b00-4bed-a322-877f94e66e2b" width="700" />
+</p>
+<br>
+
+▪ 사용자가 메시지를 작성할 수 있는 기능 <br>
+▪ 중복 확인 버튼을 이용해 수신자 아이디를 확인하는 기능<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6ae20045-dc41-4416-b951-24993b053397" width="700" />
+</p>
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7daf435d-1931-459b-9b65-ba556c39709f" width="700" />
 </p>
 <br>
 
