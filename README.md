@@ -168,7 +168,7 @@
 ### 게시글 기능
 ▪ 게시글보기, 게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글수정, 게시글삭제, 게시글 목록으로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e37b0435-415e-4290-b9a9-c4d21015a244" width="700" />
+  <img src="https://github.com/user-attachments/assets/5b7e897f-3798-48e7-9a0c-b68c88f5d718" width="700" />
 </p>
 <br>
 <p align="center">
@@ -176,13 +176,18 @@
 </p>
 
 
-
-### 페이징 기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
+### 작성자 프로필 및 메시지 기능
+▪ 게시글 작성자를 클릭하면 작성자의 프로필 확인 및 메시지 전송 기능 제공 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1baf90c9-4fba-411a-9c17-551179d8063c" width="700" />
+  <img src="https://github.com/user-attachments/assets/11dc8b88-47f1-4ff6-901e-4ad6e8a04fd8" width="700" />
 </p>
 
+### 페이징 기능
+▪ 페이지별 페이징  <br>
+▪ 그룹별 페이징  <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d2fe94cd-49ad-4f58-9061-c77fde558f7f" width="700" />
+</p>
 
 
 ### 3) 프로필수정기능
