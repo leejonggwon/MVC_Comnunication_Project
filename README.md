@@ -225,6 +225,7 @@
 ### 자료검색
 
 ▪ 도서명, 작가, 출판사 등 다양한 검색 옵션을 활용하여 등록된 자료를 조회<br>
+▪ 관리자는 자료 등록 및 수정, 삭제 등 접근 가능 <br>
 <br>
 
 <p align="center">
@@ -237,7 +238,6 @@
 </p>
 <br>
 
-▪ 관리자는 자료 등록 및 수정, 삭제 등 접근 가능 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0fb6fac7-7102-4aad-aa10-99afe4e6b354" width="700" />
 </p>
