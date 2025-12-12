@@ -166,11 +166,12 @@
 
 
 ### 게시글 기능
-▪ 게시글보기, 게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글수정, 게시글삭제, 게시글 목록으로 이동 <br>
+▪ 게시글보기 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5b7e897f-3798-48e7-9a0c-b68c88f5d718" width="700" />
 </p>
 <br>
+게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글 목록으로 이동 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dc0f357c-811e-431b-a6c7-a932bbccc20b" width="700" />
 </p>
