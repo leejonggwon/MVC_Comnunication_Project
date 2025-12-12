@@ -147,7 +147,7 @@
 ## 5. 기능설명
 
 ### 로그인 페이지
-▪ 로그인 인증 후 접근 가능
+▪ 로그인 인증 후 접근 가능<br>
 ▪ 비회원 접근 제한
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0cb0e457-c6f2-47b1-99a3-d4e7997db389" width="700" />
@@ -157,11 +157,12 @@
 ### 회원가입 
 ▪ 아이디 중복 확인 <br>
 ▪ 비밀번호 일치 여부 확인 <br>
+▪ 필수 회원정보 미입력 시 메시지 출력 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c0f902f9-7ea9-4dfc-88ec-9979f3d688ab" width="700" />
 </p>
 <br>
-▪ 필수 회원정보 미입력 시 메시지 출력 <br>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9c085db7-79aa-481f-ab79-535fa2b8303c" width="700" />
 </p>
