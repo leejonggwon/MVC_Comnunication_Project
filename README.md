@@ -144,11 +144,11 @@
 
 ## 5. 기능설명
 
-### 1) 회원가입
+### 1) 로그인기능
 ▪ 도서조회: 데이터베이스의 모든 도서 정보를 조회하여 테이블로 표시 <br>
 ▪ 도서삭제: 삭제 버튼 클릭 시 비동기 요청으로 해당 도서 삭제 후 목록 재출력 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d86b2b1d-6906-4f9f-8fa7-8d479d4ee53f" width="700" />
+  <img src="https://github.com/user-attachments/assets/0cb0e457-c6f2-47b1-99a3-d4e7997db389" width="700" />
 </p>
 
 
