@@ -144,34 +144,45 @@
 
 ## 5. 기능설명
 
-### 1) 로그인기능
-▪ 도서조회: 데이터베이스의 모든 도서 정보를 조회하여 테이블로 표시 <br>
-▪ 도서삭제: 삭제 버튼 클릭 시 비동기 요청으로 해당 도서 삭제 후 목록 재출력 <br>
+### 로그인 페이지
+▪ 로그인 인증 후 접근 가능
+▪ 비회원 접근 제한
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0cb0e457-c6f2-47b1-99a3-d4e7997db389" width="700" />
 </p>
 
 
-### 1) 페이징기능
-▪ 도서조회: 데이터베이스의 모든 도서 정보를 조회하여 테이블로 표시 <br>
-▪ 도서삭제: 삭제 버튼 클릭 시 비동기 요청으로 해당 도서 삭제 후 목록 재출력 <br>
+### 회원가입 
+▪ 아이디 중복 확인 <br>
+▪ 비밀번호 일치 여부 확인 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17e7ac33-9249-4046-b902-67d1e321a0e1" width="700" />
+  <img src="https://github.com/user-attachments/assets/c0f902f9-7ea9-4dfc-88ec-9979f3d688ab" width="700" />
+</p>
+<br>
+▪ 필수 회원정보 미입력 시 메시지 출력 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9c085db7-79aa-481f-ab79-535fa2b8303c" width="700" />
 </p>
 
 
-### 2) 검색기능
-▪ 제목, 작가, 출판사, 보유 수, ISBN 입력 후 등록 버튼 클릭 시 비동기 전송 → DB 저장 → 목록 자동 갱신 <br>
+### 게시글 기능
+▪ 게시글보기, 게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글수정, 게시글삭제, 게시글 목록으로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7ec18d50-e6e5-4f65-ae6b-89a2ccad4d81" width="700" />
+  <img src="https://github.com/user-attachments/assets/e37b0435-415e-4290-b9a9-c4d21015a244" width="700" />
+</p>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc0f357c-811e-431b-a6c7-a932bbccc20b" width="700" />
 </p>
 
 
-### 3) 답글 기능
+
+### 페이징 기능
 ▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9c445a74-0bcf-481b-8645-505f33f15f3c" width="700" />
+  <img src="https://github.com/user-attachments/assets/1baf90c9-4fba-411a-9c17-551179d8063c" width="700" />
 </p>
+
 
 
 ### 3) 프로필수정기능
