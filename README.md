@@ -228,6 +228,7 @@
 </p>
 
 ### 프로필 이미지 업데이트
+▪ 회원가입을 완료한 후 최초 로그인 시 기본 프로필 이미지가 설정된다
 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dd5f5947-9e2c-4f26-9967-2ca24eb0f15e" width="700" />
