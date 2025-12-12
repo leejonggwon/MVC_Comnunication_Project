@@ -166,12 +166,12 @@
 
 
 ### 게시글 기능
-▪ 게시글보기 <br>
+▪ 게시글목록 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5b7e897f-3798-48e7-9a0c-b68c88f5d718" width="700" />
 </p>
 <br>
-게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글 목록으로 이동 <br>
+▪ 게시글작성(제목 미입력 시 경고 메세지 츨력), 파일업로드, 게시글 목록으로 이동 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dc0f357c-811e-431b-a6c7-a932bbccc20b" width="700" />
 </p>
@@ -191,53 +191,43 @@
 </p>
 
 
-### 3) 프로필수정기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
+### 검색 기능
+▪ 옵션 별 검색  <br>
+▪ 검색 후 게시글 열람 뒤 목록으로 돌아갈 때 기존 검색 조건 유지 기능<br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/27e3c6e3-7af6-4265-9466-156cb283d4f6" width="700" />
-</p>
-
-### 4) 프로필수정기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
-<p align="center">
-  <img  src="https://github.com/user-attachments/assets/23657602-12a7-4a3a-9a49-cd24451dc129" width="700" />
+  <img src="https://github.com/user-attachments/assets/3c6536bf-2269-4559-bd3c-565a92aced1d" width="700" />
 </p>
 
 
-
-### 3) 게시글 이미지 업로드 기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
+### 좋아요 기능
+▪ 한 게시물당 좋아요 1회 제한  <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/47fa076c-effa-44d1-91db-147b3d47d843" width="700" />
+  <img src="https://github.com/user-attachments/assets/857baa6a-3d77-4c92-9316-4623ecedd5bd" width="700" />
+</p>
+
+### 답글 기능
+▪ 답글 입력, 답글 수정, 답글삭제 
+ <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/914e5327-c125-4770-a3db-aa747a5d7c5b" width="700" />
+</p>
+
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0317260d-3a48-443a-9f49-545327951b52" width="700" />
 </p>
 
 
-### 3) 좋아요 기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
+### 댓글 기능
+▪ 댓글 등록, 댓글삭제 
+ <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/13c19e33-981d-4e9e-baa9-eff6d3d69ddb" width="700" />
-</p>
-
-### 3) 댓글 기능
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/497e0007-fd4a-4e21-be19-4a9182b9c75f" width="700" />
+  <img src="https://github.com/user-attachments/assets/20f0a64f-0f82-480e-a688-ba863262144a" width="700" />
 </p>
 
 
-### 3) 좌석발권/좌석반납
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/089edc68-c607-422f-a76d-d2312dffbb0f" width="700" />
-</p>
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c3dfd844-112c-4d9c-8d59-99cbe223feb6" width="700" />
-</p>
-▪ 목록의 수정 버튼 클릭 시 수정 폼 표시 → 보유 도서 수만 수정 가능 → 저장 시 목록 갱신 <br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/df058e33-a57b-46ff-875e-09a2c1cf754e" width="700" />
-</p>
+
+
 
 
 
