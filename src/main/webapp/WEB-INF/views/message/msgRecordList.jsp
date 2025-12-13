@@ -21,13 +21,13 @@
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
 	  <div class="panel panel-default">
 		<div class="panel-heading"><span class="glyphicon glyphicon-send"></span>
-			<span style="padding-left:5px;">보낸 메일함 ${recordTotalCount}</span> 	
+			<span style="padding-left:5px;">보낸 메세지함 ${recordTotalCount}</span> 	
 		</div>
 		<div class="panel-body">
 		
 		<button id="deleteBtn" class="btn btn-danger btn-sm pull-left" style="margin: 0px 0px 15px 5px;">삭제</button>	
 		<button id="msgListBtn" class="btn btn-success btn-sm pull-left" style="margin: 0px 0px 15px 5px;">
-			<span class="glyphicon glyphicon-folder-open"></span>&nbsp; 받은 메일함 이동
+			<span class="glyphicon glyphicon-folder-open"></span>&nbsp; 받은 메세지함 이동
 		</button>	
 		
 		<!-- **검색메뉴 -->	

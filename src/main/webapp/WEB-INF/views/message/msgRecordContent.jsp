@@ -25,7 +25,7 @@
 		<form id="frm">							
 			<button data-btn="deleteMsg" class="btn btn-danger btn-sm pull-left" style="margin: 0px 0px 15px 5px;"">삭제</button> 
 			<button data-btn="msgRecordList" class="btn btn-warning btn-sm pull-left" style="margin: 0px 0px  15px 5px;">
-				<span class="glyphicon glyphicon-send"></span>&nbsp; 보낸 메일함 이동
+				<span class="glyphicon glyphicon-send"></span>&nbsp; 보낸 메세지함 이동
 			</button> 	
 			
 			<table class="table table-bordered table-hover">									 	

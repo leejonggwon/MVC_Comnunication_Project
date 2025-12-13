@@ -85,7 +85,7 @@
 					<c:if test="${not empty mvo}"><!-- 로그인시 글쓰기 버튼 노출 -->
 					<tr>
 						<td colspan="6">
-							<button id="regBtn" class="btn btn-sm btn-primary pull-right">글쓰기</button>
+							<button id="regBtn" class="btn btn-sm btn-success pull-right">글쓰기</button>
 						</td>
 					</tr>		
 					</c:if>	
@@ -209,7 +209,7 @@
 	        <p id="writerNickName" style="font-size:16px; font-weight:bold;"></p>  
 	        <p id="writerID" style="font-size:16px;"></p>           
 	        <p id="writerName" style="font-size:16px;"></p>
-	        <button id="regBtnProfile" class="btn btn-primary btn-sm">메시지 보내기</button>
+	        <button id="regBtnProfile" class="btn btn-success btn-sm">메세지 보내기</button>
 	      </div>
 	      
 	      <div class="modal-footer">

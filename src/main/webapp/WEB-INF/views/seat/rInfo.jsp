@@ -128,7 +128,7 @@
 			    listHtml += "</tbody>";			  
 			    listHtml += "<tr>";	
 			    listHtml += "<td colspan='4' align='center'>";	
-			    listHtml += "<button onclick='returnSeat()' class='btn btn-warning btn-sm'>좌석반납하기</button>";	
+			    listHtml += "<button onclick='returnSeat()' class='btn btn-success btn-sm'>좌석반납하기</button>";	
 			    listHtml += "</td>";	
 			    listHtml += "</tr>";
 			    listHtml += "</table>";

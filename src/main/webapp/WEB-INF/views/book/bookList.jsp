@@ -19,7 +19,6 @@
 <body>
 	<div class="container">
 	<%@ include file="/WEB-INF/views/common/header.jsp" %> 
-	  <h2>MVC Communication</h2>
 	  <div class="panel panel-default">
 		<div class="panel-heading">자료검색 - 소장자료 및 구독자료를 검색하세요.</div>
 		<div class="panel-body">
@@ -85,7 +84,7 @@
 					<c:if test="${mvo.memID == 'admin'}">
 						<tr>
 							<td colspan="8">
-								<button id="regBtn" class="btn btn-sm btn-primary pull-right">도서등록</button>
+								<button id="regBtn" class="btn btn-sm btn-success pull-right">도서등록</button>
 							</td>
 						</tr>		
 					</c:if>	
@@ -165,8 +164,7 @@
 			$("#regBtn").click(function() {
 				location.href="${cpath}/book/bookRegister";
 			});		
-			
-			
+
 		});
 
 	</script>

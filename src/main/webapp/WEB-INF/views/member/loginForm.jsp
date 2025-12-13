@@ -69,40 +69,40 @@
 		        <div class="item active">
 		          <img src="${cpath}/resources/loginImgs/communication1.jpg" alt="Chania" width="460" height="345">
 		          <div class="carousel-caption">
-		            <h3>커뮤니티 게시판</h3>
-		            <p>게시물검색, 페이징, 이미지첨부, 답글, 댓글, 좋아요 기능</p>
+		            <h3></h3>
+		            <p></p>
 		          </div>
 		        </div>
 		
 		        <div class="item">
 		          <img src="${cpath}/resources/loginImgs/communication2.png" alt="Chania" width="460" height="345">
 		          <div class="carousel-caption">
-		            <h3>열람실 좌석발권기능</h3>
-		            <p>좌석발권, 좌석반납, 현재발권정보, 발권이력</p>
+		            <h3></h3>
+		            <p></p>
 		          </div>
 		        </div>
 		    
 		        <div class="item">
 		          <img src="${cpath}/resources/loginImgs/communication3.png" alt="Flower" width="460" height="345">
 		          <div class="carousel-caption">
-		            <h3>자료검색</h3>
-		            <p>항목별 자료검색, 자료등록 및 수정(관리자)</p>
+		            <h3></h3>
+		            <p></p>
 		          </div>
 		        </div>
 		
 		        <div class="item">
 		          <img src="${cpath}/resources/loginImgs/communication4.png" alt="Flower" width="460" height="345">
 		          <div class="carousel-caption">
-		            <h3>메일기능</h3>
-		            <p>메일발송, 수신자아이디확인, 메일삭제, 보낸메일이력, 열람상태 확인</p>
+		            <h3></h3>
+		            <p></p>
 		          </div>
 		        </div>
 		        
 		        <div class="item">
 		          <img src="${cpath}/resources/loginImgs/communication5.png" alt="Flower" width="460" height="345">
 		          <div class="carousel-caption">
-		            <h3>회원관리기능</h3>
-		            <p>아이디중복확인, 비밀번호 일치여부확인, 프로필이미지 업데이트, 회원정보수정</p>
+		            <h3></h3>
+		            <p></p>
 		          </div>
 		        </div>
 		  

@@ -63,7 +63,7 @@
 					    	<span style="padding-left:5px;">${mvo.memNickName}님 (${mvo.memID})</span>
 					    </li>
 					</c:if>
-					<li><a href="${cpath}/message/msgList"><span class="glyphicon glyphicon-envelope"></span>&nbsp;메일함&nbsp;<span id="newMsgCount" class="badge"></span></a></li>
+					<li><a href="${cpath}/message/msgList"><span class="glyphicon glyphicon-envelope"></span>&nbsp;메세지&nbsp;<span id="newMsgCount" class="badge"></span></a></li>
 
 					<li><a href="${cpath}/member/updateForm"><span class="glyphicon glyphicon-edit"></span>&nbsp;회원정보수정</a></li>
 					

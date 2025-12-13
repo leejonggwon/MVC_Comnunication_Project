@@ -20,13 +20,13 @@
 	<div class="container">
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
 	  <div class="panel panel-default">
-		<div class="panel-heading">받은 메일</div>
+		<div class="panel-heading">받은 메세지</div>
 		<div class="panel-body">
 		<form id="frm">
 			<button data-btn="senMsgForm" class="btn btn-primary btn-sm pull-left" style="margin: 0px 0px 15px 0px;">답장하기</button>					
 			<button data-btn="deleteMsg" class="btn btn-danger btn-sm pull-left" style="margin: 0px 0px 15px 5px;"">삭제</button> 
 			<button data-btn="msgList" class="btn btn-success btn-sm pull-left" style="margin: 0px 0px  15px 5px;">
-				<span class="glyphicon glyphicon-folder-open"></span>&nbsp; 받은 메일함 이동
+				<span class="glyphicon glyphicon-folder-open"></span>&nbsp; 받은 메세지함 이동
 			</button> 	
 			
 			<table class="table table-bordered table-hover">									 	

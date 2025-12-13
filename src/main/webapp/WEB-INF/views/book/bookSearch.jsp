@@ -35,7 +35,10 @@
 				<div class="form-group">
 					<input type="text" value="${pageMaker.cri.keyword}" class="form-control" name="keyword">
 				</div>
-				<button type="submit" class="btn btn-sm btn-light">도서검색</button>									
+				<button type="submit" class="btn btn-sm btn-light" style="margin: 0px 5px 0px 0px;">도서검색</button>	
+				<c:if test="${mvo.memID == 'admin'}">		
+								<button id="regBtn" class="btn btn-sm btn-success">도서등록</button>	
+				</c:if>									
 			</form>
 		</div>
 		</div>
@@ -44,7 +47,9 @@
 	</div>
 	
 	<script type="text/javascript">
-
+		$("#regBtn").click(function() {
+			location.href="${cpath}/book/bookRegister";
+		});	
 	</script>
 	
 </body>

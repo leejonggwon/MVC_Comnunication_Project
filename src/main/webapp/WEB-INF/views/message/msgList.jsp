@@ -21,15 +21,15 @@
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
 	  <div class="panel panel-default">
 		<div class="panel-heading"><span class="glyphicon glyphicon-folder-open"></span> 
-			<span style="padding-left:5px;">받은 메일함 ${msgTotalCount}</span> 
+			<span style="padding-left:5px;">받은 메세지함 ${msgTotalCount}</span> 
 			<span style="padding-left:10px;">안읽음 ${readStatus0TotalCount}</span>
 		</div>
 		<div class="panel-body">
 						
 			<button id="deleteBtn" class="btn btn-danger btn-sm pull-left" style="margin: 0px 0px 15px 0px;">삭제</button>
-			<button id="regBtn" class="btn btn-primary btn-sm pull-left" style="margin: 0px 0px 15px 5px;">메일 쓰기</button>	
+			<button id="regBtn" class="btn btn-primary btn-sm pull-left" style="margin: 0px 0px 15px 5px;">메세지 쓰기</button>	
 			<button id="rcdBtn" class="btn btn-warning btn-sm pull-left" style="margin: 0px 0px 15px 5px;">
-				 <span class="glyphicon glyphicon-send"></span>&nbsp; 보낸 메일함 이동 
+				 <span class="glyphicon glyphicon-send"></span>&nbsp; 보낸 메세지함 이동 
 			</button>	
 			
 			<!-- **검색메뉴 -->	
@@ -54,7 +54,7 @@
 						<th style="width: 7%; text-align: center;">체크</th>
 						<th style="width: 9%; text-align: center;">열람상태</th>
 			            <th style="width: 12%; text-align: center;">발신자 아이디</th>
-			            <th style="width: 57%; text-align: center;">메시지 제목</th>
+			            <th style="width: 57%; text-align: center;">제목</th>
 			            <th style="width: 15%; text-align: center;">발송일자</th>
 					</tr>
 				</thead>
