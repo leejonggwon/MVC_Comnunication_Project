@@ -256,6 +256,8 @@
 ▪ 메시지 열람 여부(열람/미열람) 상태 표시 <br>
 ▪ 체크박스로 선택한 메시지를 삭제 <br>
 ▪ 발신자 아이디 및 제목 등 조건별로 메시지를 검색 <br>
+▪ 보낸 메세지 페이지로 이동 <br>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dae99c42-4b00-4bed-a322-877f94e66e2b" width="700" />
 </p>
@@ -285,10 +287,14 @@
 </p>
 <br>
 
-▪ 수신한 메시지 확인 <br>
-▪ 발신자 아이디 기준으로 메시지 작성 화면으로 이동 <br>
+▪ 보낸 메세지 내역을 확인  <br>
+▪ 보낸 메세지 수 표시<br>
+▪ 메시지 열람 여부(열람/미열람) 상태 표시 <br>
+▪ 체크박스로 선택한 메시지를 삭제 <br>
+▪ 발신자 아이디 및 제목 등 조건별로 메시지를 검색 <br>
+▪ 받은 메세지 페이지로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1f884cbe-aec3-438e-af61-8daa87211608" width="700" />
+  <img src="https://github.com/user-attachments/assets/97cd292f-7791-4912-82d4-b4b9b33ff694" width="700" />
 </p>
 <br>
 
