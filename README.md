@@ -251,6 +251,12 @@
 
 ### 메세지
 
+▪ 새 메시지 도착 시 알림 기능 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/58f748bb-ac1f-42af-bf92-fd84625cdc4a" width="700" />
+</p>
+<br
+
 ▪ 수신한 메시지 내역을 확인 <br>
 ▪ 받은 메세지 수 및 미열람 메세지 수 표시<br>
 ▪ 메시지 열람 여부(열람/미열람) 상태 표시 <br>
