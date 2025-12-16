@@ -65,7 +65,7 @@
 	<!-- 게시글수정 -->
 	<update id="update" parameterType="kr.spring.entity.Board">
 		UPDATE CM_BOARD 
-		SET TITLE = #{title}, CONTENT = #{content}
+		SET TITLE = #{title}, CONTENT = #{content}, IMGPATH = #{imgpath} 
 		WHERE IDX = #{idx}
 	</update>
 	

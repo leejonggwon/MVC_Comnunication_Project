@@ -358,7 +358,7 @@ VALUES (
 INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
 VALUES (
     'admin',
-    'samsung',
+    'korea',
     '접속자 증가로 인한 일시적 서비스 지연 안내',
     '현재 접속자 수가 일시적으로 증가함에 따라 일부 기능이 평소보다 느리게 동작할 수 있습니다. 서버 자원을 즉시 확장·조정 중이며 최대한 빠르게 정상화될 예정입니다. 이용에 불편을 드려 죄송합니다.'
 );
@@ -414,4 +414,43 @@ SELECT * FROM CM_MESSAGE WHERE FROMID = "admin" ORDER BY MSGIDX DESC
 
 
 
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES (
+    'admin',
+    'korea',
+    '접속자 증가로 인한 일시적 서비스 지연 안내',
+    '현재 접속자 수가 일시적으로 증가하여 일부 기능이 지연될 수 있습니다. 서버 확장을 진행 중이며 곧 정상화될 예정입니다.'
+);
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES (
+    'admin',
+    'tesla',
+    '서버 자원 조정 안내',
+    '서비스 안정화를 위해 서버 자원 조정 작업을 진행하고 있습니다. 작업 동안 일부 서비스 이용이 느릴 수 있습니다.'
+);
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES (
+    'korea',
+    'admin',
+    '일시적 서비스 응답 지연 공지',
+    '트래픽 증가로 인해 서비스 응답 속도가 다소 느릴 수 있습니다. 빠른 조치를 위해 최적화 작업을 수행하고 있습니다.'
+);
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES (
+    'korea',
+    'admin',
+    '서비스 안정화 작업 중',
+    '일부 기능에서 지연 현상이 발생하고 있어 안정화 작업을 진행 중입니다. 이용에 불편을 드려 죄송합니다.'
+);
+
+INSERT INTO CM_MESSAGE (TOID, FROMID, MSGTITLE, MSGCONTENT)
+VALUES (
+    'korea',
+    'admin',
+    '트래픽 급증 관련 안내',
+    '현재 예상치 못한 트래픽 증가로 인해 서비스 이용이 일시적으로 지연되고 있습니다. 최대한 빠르게 정상화하겠습니다.'
+);
 

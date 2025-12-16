@@ -90,9 +90,40 @@ public class BoardController {
 	//게시글 수정기능
 	//같은 이름의 메소드: 오버로딩
 	@PostMapping("/modify")
-	public String modify(Board vo, Criteria cri, RedirectAttributes rttr) {
-		//보통 서비스까지 메소드명과 URL요청값을 동일하게 한다
-		service.modify(vo); 
+	public String modify(Board vo, Criteria cri, RedirectAttributes rttr, HttpServletRequest request) {
+		
+		// 파일 업로드 경로
+	    String savePath = request.getServletContext().getRealPath("/resources/board");
+	    File dir = new File(savePath);
+	    if (!dir.exists()) dir.mkdirs();
+
+	    MultipartRequest multi = null;
+	    int fileMaxSize = 5000 * 1024 * 10;
+	    DefaultFileRenamePolicy def = new DefaultFileRenamePolicy();
+	    
+	    try {
+	        multi = new MultipartRequest(request, savePath, fileMaxSize, "UTF-8", def);
+
+	        // MultipartRequest에서 폼 값 읽기
+	        vo.setIdx(Integer.parseInt(multi.getParameter("idx"))); //idx는 String → 숫자 변환 필수
+	        vo.setTitle(multi.getParameter("title"));
+	        vo.setContent(multi.getParameter("content"));
+
+	        // 업로드된 파일명 가져오기
+	        String filename = multi.getFilesystemName("imgpath");
+	        vo.setImgpath(filename);
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	        rttr.addFlashAttribute("msg", "파일 업로드 실패");
+	        return "redirect:/board/modify";
+	    }
+
+	    // DB 저장
+	  //보통 서비스까지 메소드명과 URL요청값을 동일하게 한다
+	  	service.modify(vo);
+	  	
+	    rttr.addFlashAttribute("modify_result", vo.getIdx());
 		
 		rttr.addAttribute("page",cri.getPage());
 		rttr.addAttribute("perPageNum",cri.getPerPageNum());

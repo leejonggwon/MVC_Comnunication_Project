@@ -295,6 +295,9 @@
 			var result = "${result}"; //rttr.addFlashAttribute("result", vo.getIdx())에서 받아온다
 			checkModal(result); //checkModal()함수로 이동 
 			
+			var modify_result = "${modify_result}"; //rttr.addFlashAttribute("result", vo.getIdx())에서 받아온다
+			modify_checkModal(modify_result); //checkModal()함수로 이동 
+			
 			$("#regBtn").click(function(){
 				//클릭하면 클쓰기 페이지 이동
 				location.href="${cpath}/board/register?page=${pageMaker.cri.page}&perPageNum=${pageMaker.cri.perPageNum}"; 
@@ -321,6 +324,18 @@
 			if(parseInt(result) > 0){
 				$("#modal-title").text("Modal Header"); 
 				$("#modal-body").text("게시글 " + result + "번이 등록되었습니다"); //class="modal-body"
+				$("#myMessage").modal("show"); //id="myMessage" 모달 실행
+			}
+		}
+		
+		//게시글등록성공시 모달 
+		function modify_checkModal(modify_result){
+			if(modify_result == ''){
+				return; //함수끝
+			}
+			if(parseInt(modify_result) > 0){
+				$("#modal-title").text("Modal Header"); 
+				$("#modal-body").text("게시글 " + modify_result + "번이 수정되었습니다"); //class="modal-body"
 				$("#myMessage").modal("show"); //id="myMessage" 모달 실행
 			}
 		}

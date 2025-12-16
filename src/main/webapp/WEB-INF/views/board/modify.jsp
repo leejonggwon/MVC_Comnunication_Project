@@ -44,6 +44,10 @@
 						</td>
 					</tr>
 					<tr>
+						<td>파일</td>
+						<td><input id="file" type="file" name="imgpath" class="form-control"></td>
+					</tr>	
+					<tr>
 						<td>작성자</td>
 						<td><input id="writer" readonly="readonly" value="${vo.writer}" name="writer" type="text" class="form-control"></td>
 					</tr>
@@ -104,6 +108,7 @@
 				}else if(btn == "modify"){
 					formData.attr("action", "${cpath}/board/modify");
 					formData.attr("method", "post");
+					formData.attr("enctype", "multipart/form-data"); //파일업로드
 				}
 				formData.submit();
 			});

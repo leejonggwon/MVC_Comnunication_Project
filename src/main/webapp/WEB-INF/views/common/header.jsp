@@ -40,6 +40,7 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li class="#"><a href="${cpath}/board/list/">커뮤니티</a></li> <!--루트(/)만 입력하면 controller(context path)가 생략되므로, 명시적으로 /controller/를 입력 -->
+					<li><a href="${cpath}/chat/chatGroup/">오픈채팅</a></li>
 					<li><a href="${cpath}/seat/seat/">좌석발권</a></li>
 					<li><a href="${cpath}/seat/rInfo/">발권정보</a></li>		
 					<li><a href="${cpath}/book/bookSearch/">자료검색</a></li>		
