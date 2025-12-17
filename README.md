@@ -114,7 +114,7 @@
 </p>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fe52764f-0683-42d0-a93e-403e21e8eb8e" width="700" />
+  <img src="https://github.com/user-attachments/assets/e1d038f5-3e02-4269-bfe7-0b81b277fa94" width="700" />
 </p>
 <br>
 
