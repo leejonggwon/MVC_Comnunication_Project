@@ -3,8 +3,10 @@
 ▪ MVC Communication 
 ### 서비스설명
 ▪ 본 프로젝트는 스프링(Spring) 프레임워크와 MVC 3Tier 아키텍처를 기반으로 한 커뮤니케이션 프로젝트입니다. <br>
-▪ 회원관리기능, 게시글기능, 좋아요기능, 댓글기능, 답글기능, 조회수기능, 검색기능, 페이징기능, 게시글 작성자 프로필기능, 좌석발권, 자료검색, 메세지 기능등을 제공하며 비동기 통신(AJAX)을 통해 실시간으로 목록을 갱신함으로 사용자 경험을 향상시켰습니다. <br>
-▪ Bootstrap 3과 직관적인 JSP 기반 UI를 통해 사용자 간 손쉽게 소통하고, 효율적으로 커뮤니티 기능을 활용할 수 있는 웹 애플리케이션 개발을 목표로 합니다.
+▪ 사용자 간 손쉽게 소통하고, 효율적으로 커뮤니티 기능을 활용할 수 있는 웹 애플리케이션 개발을 목표로 합니다. <br>
+▪ 그룹 채팅, 메시지, 게시글 작성, 좋아요, 댓글·답글, 조회수, 검색, 페이징, 게시글 작성자 프로필, 좌석 발권, 자료 검색, 회원 관리 등의 기능을 제공하며,
+WebSocket과 비동기 통신(AJAX)을 활용한 실시간 목록 갱신을 구현했습니다. <br>
+▪ Bootstrap 3과 직관적인 JSP 기반 UI를 통해 사용자 친화적인 화면을 구성했습니다. <br>
 <br>
 
 
@@ -30,6 +32,7 @@
 ▪ MemberController / MemeberRestController <br>
 ▪ BoardController / BoardRestController <br>
 ▪ SeatController / SeatRestController <br>
+▪ ChatController <br>
 ▪ CommentRestController <br>
 ▪ LikeRestController <br>
 
@@ -47,6 +50,9 @@
 ▪ CommentMapper /CommentMapper.xml <br>
 ▪ LikeMapper /LikeMapper.xml <br>
 
+### 4) socket
+▪ MySocketHandler_Group
+▪ WebSocketCoonfig
 
 <br>
 
