@@ -1,4 +1,4 @@
-## 1. 서비스소개 
+<img width="1287" height="113" alt="image" src="https://github.com/user-attachments/assets/165926b6-8673-4202-8995-6c1b5fb28b14" />## 1. 서비스소개 
 ### 서비스명
 ▪ MVC Communication 
 ### 서비스설명
@@ -91,28 +91,30 @@
 ▪ 게시글목록 <br>
 ▪ 게시글 상세보기 할 때마다 조회수 1씩 증가 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0a122f65-9bce-4f81-b762-8f6790dfc456" width="700" />
+  <img src="https://github.com/user-attachments/assets/54364dc7-5833-4be0-9319-b56e0d476664" width="700" />
 </p>
 <br>
+
 
 ▪ 게시글작성(제목 미입력 시 경고 메세지 츨력) <br>
 ▪ 파일업로드 <br>
 ▪ 게시글 목록으로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dc0f357c-811e-431b-a6c7-a932bbccc20b" width="700" />
+  <img src="https://github.com/user-attachments/assets/6dab254e-4e28-4e7d-84de-0e5f9ebdfef2" width="700" />
 </p>
 <br>
+
 
 ▪ 게시글수정 <br>
 ▪ 게시글 삭제 <br>
 ▪ 답글 삭제시 "작성자에 의해 삭제된 게시글입니다" 표시 <br>
 ▪ 게시글 목록으로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ec86688e-1c55-4a6f-8235-bbbcaf023806" width="700" />
+  <img src="https://github.com/user-attachments/assets/1ae3b894-7c6b-4402-a9fa-a8c1ece173cd" width="700" />
 </p>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b08a566b-a55a-4d16-a10c-9153ca70eb75" width="700" />
+  <img src="https://github.com/user-attachments/assets/fe52764f-0683-42d0-a93e-403e21e8eb8e" width="700" />
 </p>
 <br>
 
@@ -120,22 +122,21 @@
 ### 작성자 프로필 및 메시지 기능
 ▪ 게시글 작성자를 클릭하면 작성자의 프로필 확인 및 메시지 전송 기능 제공 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/11dc8b88-47f1-4ff6-901e-4ad6e8a04fd8" width="700" />
+  <img src="https://github.com/user-attachments/assets/ccba83d8-173d-44aa-9954-7c8537b8cc1e" width="700" />
 </p>
 
 ### 페이징 기능
 ▪ 페이지별 페이징  <br>
 ▪ 그룹별 페이징  <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d2fe94cd-49ad-4f58-9061-c77fde558f7f" width="700" />
+  <img src="https://github.com/user-attachments/assets/bb231d25-db8c-439d-8af2-f34a89f68dfe" width="700" />
 </p>
-
 
 ### 검색 기능
 ▪ 옵션 별 검색  <br>
 ▪ 검색 후 게시글 열람 뒤 목록으로 돌아갈 때 기존 검색 조건 유지 기능<br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3c6536bf-2269-4559-bd3c-565a92aced1d" width="700" />
+  <img src="https://github.com/user-attachments/assets/41971616-f6ba-47bf-9eb0-5835d089d960" width="700" />
 </p>
 
 
@@ -148,7 +149,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ea25b674-ba77-4274-8d89-80a540cbac17" width="700" />
+  <img src="https://github.com/user-attachments/assets/4420947a-da8f-4e03-9e4f-04458301ef3c" width="700" />
 </p>
 
 
@@ -160,12 +161,12 @@
 
  <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/914e5327-c125-4770-a3db-aa747a5d7c5b" width="700" />
+  <img src="https://github.com/user-attachments/assets/97b68cf2-e1f4-4ed2-a10c-67fb460c6965" width="700" />
 </p>
 
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0317260d-3a48-443a-9f49-545327951b52" width="700" />
+  <img src="https://github.com/user-attachments/assets/79eafdd7-1ce4-470a-a248-06b9636d3775" width="700" />
 </p>
 
 
@@ -182,16 +183,26 @@
 ▪ 회원가입을 완료한 후 최초 로그인 시 기본 프로필 이미지가 설정된다
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dd5f5947-9e2c-4f26-9967-2ca24eb0f15e" width="700" />
+  <img src="https://github.com/user-attachments/assets/c7c54ed3-08dd-4ed3-a805-b06f82812da7" width="700" />
 </p>
 <br>
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a3f6ae3-09c3-4523-8ada-63b9f04c5348" width="700" />
+  <img src="https://github.com/user-attachments/assets/d994a449-f3d5-4f61-a0f8-39be32f324a2" width="700" />
 </p>
+
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7dcc091d-196a-4ddc-8c9f-5e29a5ab4969" width="700" />
+  <img src="https://github.com/user-attachments/assets/f86a1d4f-feba-447b-86f6-a7c0d21e0ed2" width="700" />
 </p>
+
+### 프로필 수정
+▪ 비밀번호, 사용자이름, 닉네임, 나이, 성별, 이름, 이메일 등 프로필수정이 가능하다  <br>
+▪ 비밀번호, 비밀번호확인이 일치해야 한 <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c8c6697b-57a7-450e-b4b8-e8c4ecd21e0f" width="700" />
+</p>
+
 
 ### 좌석 발권 기능
 
@@ -202,66 +213,73 @@
 ▪ 현재 발권 정보 및 과거 발권 기록 조회 기능 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4d48fa39-f5a7-4725-bedd-a9e998489841" width="700" />
+  <img src="https://github.com/user-attachments/assets/05b76200-6e0f-4553-89fb-e16504148c41" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/da917843-c222-4312-b2d3-1ddcfa740a87" width="700" />
+  <img src="https://github.com/user-attachments/assets/9a50c0ab-a66b-4ddb-8ca0-158dfdd61d9d" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a60243e9-81d3-493e-b4ea-e78f0a2a1cb3" width="700" />
+  <img src="https://github.com/user-attachments/assets/83254f2b-d029-48cf-a4ce-7093f79522d9" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/76bbfae3-1233-4430-9691-e353ce6112fb" width="700" />
+  <img src="https://github.com/user-attachments/assets/37b3cb91-c0a2-4400-830d-0016383d9b0a" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ba052632-d567-4a80-a469-c97f51d0e3e7" width="700" />
+  <img src="https://github.com/user-attachments/assets/60a2f07b-2bfd-4bc1-8954-6df629376e67" width="700" />
 </p>
 <br>
 
 
 
-### 자료검색
+### 자료검색(사용자)
 
 ▪ 도서명, 작가, 출판사 등 다양한 검색 옵션을 활용하여 등록된 자료를 조회<br>
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a5b764d-fc82-4490-915c-72d29f69534c" width="700" />
+</p>
+<br>
+
+<p align="center">
+  <img  src="https://github.com/user-attachments/assets/ad324b36-4cd6-4109-8d84-fa431c852146" width="700" />
+</p>
+<br>
+
+### 자료검색(관리자)
 ▪ 관리자는 자료 등록 및 수정, 삭제 등 접근 가능 <br>
 <br>
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b2c9cd1d-be97-4c08-8974-ffce61128b9a" width="700" />
+  <img src="https://github.com/user-attachments/assets/03623187-51d5-4c00-b725-9ccdf03c1367" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0a68bfdf-6214-4b0e-80b7-ef4ffcd65ca3" width="700" />
+  <img src="https://github.com/user-attachments/assets/317fa267-d8a9-4dcb-b521-4559d615c0cf" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0fb6fac7-7102-4aad-aa10-99afe4e6b354" width="700" />
+  <img src="https://github.com/user-attachments/assets/7e822ba1-a090-4d6d-8fb7-80e7bc8500c7" width="700" />
 </p>
 <br>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/cf39b06c-bc58-4c0f-99bb-1ed5b8c49c3f" width="700" />
-</p>
-<br>
-
 
 ### 메세지
 
 ▪ 새 메시지 도착 시 알림 기능 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/58f748bb-ac1f-42af-bf92-fd84625cdc4a" width="700" />
+  <img src="https://github.com/user-attachments/assets/f09037d0-d068-4d28-99bf-26f92542736e" width="700" />
 </p>
-<br
+<br>
+
 
 ▪ 수신한 메시지 내역을 확인 <br>
 ▪ 받은 메세지 수 및 미열람 메세지 수 표시<br>
@@ -271,20 +289,21 @@
 ▪ 보낸 메세지 페이지로 이동 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dae99c42-4b00-4bed-a322-877f94e66e2b" width="700" />
+  <img src="https://github.com/user-attachments/assets/bd529d7f-ea2e-4bfb-bdcc-74b692fda268" width="700" />
 </p>
 <br>
+
 
 ▪ 사용자가 메시지를 작성할 수 있는 기능 <br>
 ▪ 중복 확인 버튼을 이용해 수신자 아이디를 확인하는 기능<br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6ae20045-dc41-4416-b951-24993b053397" width="700" />
+  <img src="https://github.com/user-attachments/assets/5682c9bc-c9b4-4d8c-815b-476be5499f09" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0ff3c1bf-1442-4f1b-b17e-dfaaf1f08334" width="700" />
+  <img  src="https://github.com/user-attachments/assets/07f807f9-12a0-4d14-bb78-5b49cd6811e4" width="700" />
 </p>
 <br>
 
@@ -306,12 +325,12 @@
 ▪ 발신자 아이디 및 제목 등 조건별로 메시지를 검색 <br>
 ▪ 받은 메세지 페이지로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/97cd292f-7791-4912-82d4-b4b9b33ff694" width="700" />
+  <img src="https://github.com/user-attachments/assets/ab064546-a258-4305-a422-306ae93a3396" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img  src="https://github.com/user-attachments/assets/a0f89e0c-0489-449c-b053-cf92bc2c93cc" width="700" />
+  <img  src="https://github.com/user-attachments/assets/e00bfb20-3e76-4738-ad31-9e658a090986" width="700" />
 </p>
 <br>
 
