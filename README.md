@@ -179,6 +179,21 @@
   <img src="https://github.com/user-attachments/assets/20f0a64f-0f82-480e-a688-ba863262144a" width="700" />
 </p>
 
+### 단체 오픈 채팅 기능 구현
+
+▪ WebSocket 기반 실시간 그룹 채팅 구현<br>
+<br>
+
+<p align="center">
+  <img  src="https://github.com/user-attachments/assets/1ea21c99-8a71-4280-a429-a33cd78fb280" width="700" />
+</p>
+<br>
+
+<p align="center">
+  <img  src="https://github.com/user-attachments/assets/5bf366e1-73bf-4027-89b2-d02cc0ab99af" width="400" />
+</p>
+<br>
+
 ### 프로필 이미지 업데이트
 ▪ 회원가입을 완료한 후 최초 로그인 시 기본 프로필 이미지가 설정된다
 <br>
@@ -335,17 +350,4 @@
 <br>
 
 
-### 단체 오픈 채팅 기능 구현
 
-▪ WebSocket 기반 실시간 그룹 채팅 구현<br>
-<br>
-
-<p align="center">
-  <img  src="https://github.com/user-attachments/assets/1ea21c99-8a71-4280-a429-a33cd78fb280" width="700" />
-</p>
-<br>
-
-<p align="center">
-  <img  src="https://github.com/user-attachments/assets/5bf366e1-73bf-4027-89b2-d02cc0ab99af" width="400" />
-</p>
-<br>
