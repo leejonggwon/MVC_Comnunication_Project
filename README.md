@@ -1,4 +1,4 @@
-<img width="1287" height="113" alt="image" src="https://github.com/user-attachments/assets/165926b6-8673-4202-8995-6c1b5fb28b14" />## 1. 서비스소개 
+## 1. 서비스소개 
 ### 서비스명
 ▪ MVC Communication 
 ### 서비스설명
