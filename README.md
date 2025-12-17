@@ -185,7 +185,7 @@
 <br>
 
 <p align="center">
-  <img  src="https://github.com/user-attachments/assets/1ea21c99-8a71-4280-a429-a33cd78fb280" width="700" />
+  <img  src="https://github.com/user-attachments/assets/429a3055-e868-43fb-b5bd-0a7b66014f67" width="700" />
 </p>
 <br>
 
