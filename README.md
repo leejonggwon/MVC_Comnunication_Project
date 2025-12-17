@@ -325,12 +325,12 @@
 ▪ 발신자 아이디 및 제목 등 조건별로 메시지를 검색 <br>
 ▪ 받은 메세지 페이지로 이동 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ab064546-a258-4305-a422-306ae93a3396" width="700" />
+  <img  src="https://github.com/user-attachments/assets/aaf0da10-fa40-4e9e-8167-14a839513467" width="700" />
 </p>
 <br>
 
 <p align="center">
-  <img  src="https://github.com/user-attachments/assets/e00bfb20-3e76-4738-ad31-9e658a090986" width="700" />
+  <img  src="https://github.com/user-attachments/assets/a94072cb-1be9-4a9c-b0b4-517c7a762477" width="700" />
 </p>
 <br>
 
