@@ -335,3 +335,17 @@
 <br>
 
 
+### 단체 오픈 채팅 기능 구현
+
+▪ WebSocket 기반 실시간 그룹 채팅 구현<br>
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/798bcde6-950b-4942-82fa-5a1aef7837c2 width="700" />
+</p>
+<br>
+
+<p align="center">
+  <img  src="https://github.com/user-attachments/assets/5bf366e1-73bf-4027-89b2-d02cc0ab99af" width="700" />
+</p>
+<br>
